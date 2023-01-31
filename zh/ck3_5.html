@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <title>成大方程式賽車隊</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="NCKU, FSAE, Forumla, Racing, Formula Racing, 成大方程式賽車隊, 成大, 成功大學, 成功大學方程式賽車隊, 方程式賽車隊" />
+    <meta name="author" content="成大方程式賽車隊" />
+    <meta name="description" content="成大方程式賽車隊" />
+    <link rel="icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <script src="../script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ce85bf40c6.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="menu">
+        <a href="home.html" class="logo"><img src="../logo/logo_w.png" width="210px" height="65px"></a>
+        <div class="menu-r">
+            <!--Order is reversed-->
+            <a href="contact.html" style="font-weight: bold;" class="d">聯絡我們</a>
+            <a href="sponsors.html" style="font-weight: bold;" class="d">贊助</a>
+            <a href="vehicles.html" style="font-weight: bold;" class="d">車輛</a>
+            <a href="about.html" style="font-weight: bold;" class="d">團隊</a>
+            <a href="home.html" style="font-weight: bold;" class="d">首頁</a>
+            <a href="javascript:void(0)" onclick="openNav()" class="open-m">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+    </div>
+    <!--Set to current page but different lang-->
+    <div class="lang">
+        <a href="../en/.html"><img src="../img/zh.png" width="17px"></a>
+    </div>
+</header>
+
+<body>
+    <div class="menu-m" id="m">
+        <a href="javascript:void(0)" onclick="closeNav()" class="close-m">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <a href="home.html" style="font-weight: bold;">首頁</a>
+        <a href="about.html" style="font-weight: bold;">團隊</a>
+        <a href="vehicles.html" style="font-weight: bold;">車輛</a>
+        <a href="sponsors.html" style="font-weight: bold;">贊助</a>
+        <a href="contact.html" style="font-weight: bold;">聯絡我們</a>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <img class="cover" src="../img/ck3_5/cover.JPG">
+    <div class="t_box">
+        <h1 class="cont" style="font-size:4vw;">CK3.5</h1>
+        <h3>2022 | 第四屆</h3>
+        <p>因應賽事規則變更與對穩定度的近一步追求，團隊在去年的基礎上進行設計與製程改良，</p>
+        <p>打造第四輛賽車CK3.5，並於2022年8月正式亮相。</p>
+        <hr style="padding:15px;">
+        <h2>比賽成績</h2>
+        <h3 class="cont">2022 <span style="color:#8c6e4a;">FSAE Japan</span></h3>
+        <h3 style="color:#a31f34;">因疫情無法參加</h3>
+        <hr style="padding:5px;">
+        <h3 class="cont">2022 <span style="color:#8c6e4a;">FST</span></h3>
+        <h3 style="color:#8c6e4a;">Overall <span style="color:#a31f34;">1st</span></h3>
+    </div>
+    <div class="t_box">
+        <div class="car_imgbox">
+            <!--max 8 img per page-->
+            <div class="car_row">
+                <img src="../img/ck3_5/1.jpg">
+                <img src="../img/ck3_5/4.jpg">
+                <img src="../img/ck3_5/3.jpg">
+                <img src="../img/ck3_5/8.JPG">
+            </div>
+            <div class="car_row">
+                <img src="../img/ck3_5/6.JPG">
+                <img src="../img/ck3_5/2.JPG">
+                <img src="../img/ck3_5/5.jpg">
+                <img src="../img/ck3_5/7.JPG">
+            </div>
+        </div>
+    </div>
+    <div class="t_box" id="list">
+        <h2>第四屆成員名單</h2>
+        <div class="sector">
+            <div class="member">
+                <img src="../img/ck3_5/td.JPG">
+                <h3>總工程師</h3>
+                <h2>黃啟瑋</h2>
+                <p>機械111</p>
+            </div>
+        </div>
+        <table class="member_list">
+            <tr>
+                <th>組別</th>
+                <th>名字</th>
+                <th>系級</th>
+            </tr>
+            <tr>
+                <td>車體組組長</td>
+                <td>萬庭瑜</td>
+                <td>系統113</td>
+            </tr>
+            <tr>
+                <td>車體組組長</td>
+                <td>王子奇</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>底盤組組長</td>
+                <td>陳俠宇</td>
+                <td>機械112</td>
+            </tr>
+            <tr>
+                <td>底盤組組長</td>
+                <td>陳毅珉</td>
+                <td>機械112</td>
+            </tr>
+            <tr>
+                <td>電力組組長</td>
+                <td>洪緯宸</td>
+                <td>資訊112</td>
+            </tr>
+            <tr>
+                <td>電力組組長</td>
+                <td>呂曉南</td>
+                <td>工科112</td>
+            </tr>
+            <tr>
+                <td>商業組組長</td>
+                <td>蘇懌帆</td>
+                <td>法律112</td>
+            </tr>
+            <tr>
+                <td>商業組組長</td>
+                <td>黃馨葇</td>
+                <td>不分111</td>
+            </tr>
+            <tr>
+                <th>組別</th>
+                <th>名字</th>
+                <th>系級</th>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>林照勳</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>張傑舜</td>
+                <td>生技113</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>林謙</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>呂柏逸</td>
+                <td>系統113</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>蕭予瑄</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>許舒昀</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>簡誌加</td>
+                <td>電機114</td>
+            </tr>
+            <tr>
+                <td>車體組</td>
+                <td>賴奕廷</td>
+                <td>工設114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>林凱鈞</td>
+                <td>航太113</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>吳捷儒</td>
+                <td>機械111</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>黃薏恬</td>
+                <td>機械112</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>殷振翔</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>林旭鎧</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>余祐安</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>黃仲鈞</td>
+                <td>物理112</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>邱敬文</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>洪秉科</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>李世鈺</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>吳宇森</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>郭諺廷</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>張元睿</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>何俊樑</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>吳欣航</td>
+                <td>機械112</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>魏宇駿</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>底盤組</td>
+                <td>張祐嘉</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>莊明翰</td>
+                <td>工科114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>鄭譯賢</td>
+                <td>能源112</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>沈茵茵</td>
+                <td>電機114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>趙彥筑</td>
+                <td>機械113</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>李旻勳</td>
+                <td>物理114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>林彥達</td>
+                <td>電機114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>陳秉弘</td>
+                <td>電機114</td>
+            </tr>
+            <tr>
+                <td>電力組</td>
+                <td>李群晟</td>
+                <td>電機114</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>李怡臻</td>
+                <td>不分113</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>湯宇</td>
+                <td>工設112</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>江其俊</td>
+                <td>工設112</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>吳偉綸</td>
+                <td>機械114</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>張芷綾</td>
+                <td>工設114</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>衛暄芳</td>
+                <td>交管114</td>
+            </tr>
+            <tr>
+                <td>商業組</td>
+                <td>方首仁</td>
+                <td>會計114</td>
+            </tr>
+        </table>
+    </div>
+    <a href="sponsors.html#spon_2022">
+        <div class="btn">
+            <h3 style="color:#ffffff;">2022贊助商</h3>
+        </div>
+    </a>
+    <hr style="padding:20px;">
+</body>
+<footer>
+    <h4 class="cont">#RaceBeyond</h4>
+    <a href="https://www.facebook.com/nckuformularacing/" target="_blank"><i
+        class='fab fa-facebook'></i></a>
+    <a href="https://www.instagram.com/nckuformularacing/" target="_blank"><i
+        class='fab fa-instagram'></i></a>
+    <a href="https://www.youtube.com/channel/UCZrO0mKGFS3_fs4XA1OUlFA" target="_blank"><i
+            class='fab fa-youtube'></i></a>
+    <p style="font-size: 12px;">Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script> NCKU Formula Racing. All Rights Reserved.</p>
+</footer>
+<script>
+</script>
+
+</html>
