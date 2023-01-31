@@ -64,8 +64,8 @@ function toggleTable() {
 
 // version
 
-document.getElementById("version").innerHTML = "V1.0"; //小版本放小數點後一位 大版本(一屆)為個位數
-document.getElementById("v_date").innerHTML = "2023/2/6";
+document.getElementById("version").innerHTML = "v0.1_Dev"; //小版本放小數點後一位 大版本(一屆)為個位數 eg
+document.getElementById("v_date").innerHTML = "2023//"; //Official release date: TBC
 
 // home page cover
 /*
