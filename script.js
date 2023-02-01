@@ -67,6 +67,12 @@ function toggleTable() {
 document.getElementById("version").innerHTML = "v0.1_Dev"; //小版本放小數點後一位 大版本(一屆)為個位數 eg
 document.getElementById("v_date").innerHTML = "2023//"; //Official release date: TBC
 
+// home page grid redirect
+//<div> disappears after wrapping it in <a>
+function redir(link, tgt) {
+    window.open(link, tgt); //tgt: _parent, _blank
+}
+
 // home page cover
 /*
 i = 0;
