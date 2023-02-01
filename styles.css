@@ -450,11 +450,14 @@ hr {
     }
 }
 
+
+/*
 @media screen and (max-width: 600px) {
     .grid {
         display: none;
     }
 }
+*/
 
 
 /* join */
