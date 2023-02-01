@@ -367,7 +367,7 @@ hr {
 }
 
 .g_history {
-    background-image: url(./img/history.JPG);
+    background-image: url(./img/history.jpg);
     background-size: cover;
     background-position: 80%;
     grid-column: 4/5;
