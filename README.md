@@ -21,8 +21,8 @@ Use `<hr style="padding:px;">`
 [Image compresser(Image app WIP)](https://compressjpeg.com/)  
 ---  
 # Home:  
+### :
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors  
----  
 # About:  
 ### Abbrivations of members:  
 -leader 隊長  
@@ -33,13 +33,10 @@ Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
 -md 商業組組長(marketing director)  
 ### History
 tbc  
----
 # Vehicles
 tbc
----  
 # Sponsors  
 tbc
----  
 # Contact
-tbc
+tbc  
 ---  
