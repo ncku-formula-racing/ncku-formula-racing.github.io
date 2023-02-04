@@ -21,7 +21,6 @@ Use `<hr style="padding:px;">`
 [Image compresser(Image app WIP)](https://compressjpeg.com/)  
 ---  
 # Home:  
-### :
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors  
 # About:  
 ### Abbrivations of members:  
@@ -39,4 +38,6 @@ tbc
 tbc
 # Contact
 tbc  
----  
+
+
+If you have any questions about it please contact [Site Creator](https://github.com/poi-sl).
