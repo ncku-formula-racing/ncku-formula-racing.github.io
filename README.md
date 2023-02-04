@@ -20,10 +20,10 @@ Use `<hr style="padding:px;">`
 [Table to html table(For member list)](https://tableconvert.com/excel-to-html)  
 [Image compresser(Image app WIP)](https://compressjpeg.com/)  
 ---  
-# Home  
+# Home:  
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors  
 ---  
-# About  
+# About:  
 ### Abbrivations of members:  
 -leader 隊長  
 -td 總工(technical director)  
