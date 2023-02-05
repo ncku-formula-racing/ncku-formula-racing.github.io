@@ -22,7 +22,6 @@ Use `<hr style="padding:px;">`
 ### External Tools:  
 [Table to html table(For member list)](https://tableconvert.com/excel-to-html)  
 [Image compresser(Image app WIP)](https://compressjpeg.com/)  
-Contact [Site Creator](https://github.com/poi-sl) if you have any questions.  
   
 # Home:  
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
