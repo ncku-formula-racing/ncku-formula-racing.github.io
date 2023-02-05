@@ -22,7 +22,7 @@ Use `<hr style="padding:px;">`
 ### External Tools:  
 [Table to html table(For member list)](https://tableconvert.com/excel-to-html)  
 [Image compresser(Image app WIP)](https://compressjpeg.com/)  
-  
+(**!!!BEWARE!!!** Sometimes the image compressing site will make color off and less saturated, make sure to double check. (That's why I am making one myself))  
 # Home:  
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
 # About:  
