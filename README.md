@@ -1,5 +1,5 @@
 ### Site Status :
-![Site status](https://img.shields.io/website?color=%23a31f34&style=flat-square&url=https%3A%2F%2Fncku-formula-racing.github.io%2F) ![code size](https://img.shields.io/github/languages/code-size/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square) ![total size](https://img.shields.io/github/repo-size/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square)  
+![site status](https://img.shields.io/website?color=%23a31f34&style=flat-square&url=https%3A%2F%2Fncku-formula-racing.github.io%2F) ![language](https://img.shields.io/github/languages/count/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square) ![code size](https://img.shields.io/github/languages/code-size/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square) ![total size](https://img.shields.io/github/repo-size/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square) ![last commit](https://img.shields.io/github/last-commit/ncku-formula-racing/ncku-formula-racing.github.io?color=%23a31f34&style=flat-square)  
 ---
 # General Rules  
 ### Branding(CI):  
