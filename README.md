@@ -21,7 +21,7 @@ Small section: sector
 Use `<hr style="padding:px;">`
 ### External Tools:  
 [Table to html table(For member list)](https://tableconvert.com/excel-to-html)  
-[Image compresser(Image app WIP)](https://compressjpeg.com/)
+[Image compresser(Image app WIP)](https://compressjpeg.com/)  
 ---  
 # Home:  
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
