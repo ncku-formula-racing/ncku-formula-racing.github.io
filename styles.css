@@ -179,6 +179,19 @@ header {
     margin-left: 0px;
 }
 
+.logo {
+    width: 210px;
+    height: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-top: 10px;
+        width: 150px;
+        height: auto;
+    }
+}
+
 
 /* body */
 
@@ -529,7 +542,6 @@ hr {
     width: 20%;
     display: inline-block;
     padding: 20px;
-    font-size: 2.5vw;
     text-align: center;
     background-size: 250px 250px;
     background-position-x: center;
@@ -537,8 +549,19 @@ hr {
 }
 
 .box_team p {
+    font-size: 2.5vw;
     font-style: bold;
     color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .box_team {
+        width: 100%;
+        margin: 5px;
+    }
+    .box_team p {
+        font-size: 10vw;
+    }
 }
 
 .body {
@@ -827,14 +850,18 @@ hr {
 }
 
 .sponsors>.enlarge {
-    height: 90px;
     padding: 20px;
+    height: 90px;
 }
 
 @media screen and (max-width: 600px) {
     .sponsors>img {
-        padding: 20px;
-        height: 75px;
+        padding: 10px;
+        height: 55px;
+    }
+    .sponsors>.enlarge {
+        padding: 10px;
+        height: 70px;
     }
 }
 
