@@ -31,10 +31,10 @@ Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
 -td 總工(technical director)  
 -bd 車體組組長(bodywork director)  
 -cd 底盤組組長(chassis director)  
--ed 電力組組長(electrical director)  
+-ed 電力組組長(electric director)  
 -md 商業組組長(marketing director)
 ### History:
-tbc  
+Text+Image, image need to have logo on it.  
 # Vehicles:
 User #E4002B (Phoenix) for car's name.  
 # Sponsors:
