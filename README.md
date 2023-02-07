@@ -40,6 +40,7 @@ User #E4002B (Phoenix) for car's name.
 # Sponsors:
 Image height: max 256px, no background color(even if it's white).  
 A button to sponsor us page then sort them by year.  
+Add `class="enlarge"` if the logo is too small to identify.
 # Contact:
 Email -> Social media -> Map & Address -> Site info(creator & maintainer)  
 
