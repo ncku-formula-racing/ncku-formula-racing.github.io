@@ -837,8 +837,8 @@ hr {
     @supports not (aspect-ratio: 21/9) {
         .box_car {
             background-size: cover;
-            width: 100vw;
-            height: 43vw;
+            width: 95vw;
+            height: 41vw;
         }
     }
 }
