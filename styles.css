@@ -818,6 +818,12 @@ hr {
     padding: 0 5px;
 }
 
+.car_row img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .car_row {
         -ms-flex: 100%;
@@ -825,12 +831,9 @@ hr {
         max-width: 100%;
         padding: 0 5px;
     }
-}
-
-.car_row img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    .box_car {
+        width: 100%;
+    }
 }
 
 
