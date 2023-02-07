@@ -64,8 +64,15 @@ function toggleTable() {
 
 // version
 
-document.getElementById("version").innerHTML = "Pre_v0.4"; //小版本放小數點後一位 大版本(一屆)為個位數 eg
-document.getElementById("v_date").innerHTML = "2023/2/1"; //Official release date: TBC
+
+var version = "Pre_v0.4";
+var date = "2023/2/7";
+
+function ver() {
+    document.getElementById("version").innerHTML = version; //小版本放小數點後一位 大版本(一屆)為個位數 eg
+    document.getElementById("v_date").innerHTML = date; //Official release date: TBC
+}
+console.log("NCKU Formula Racing Website | " + version + ", " + date)
 
 // home page grid redirect
 //<div> disappears after wrapping it in <a>
