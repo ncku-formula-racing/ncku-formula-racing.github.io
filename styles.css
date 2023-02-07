@@ -838,7 +838,7 @@ hr {
         .box_car {
             background-size: cover;
             width: calc("100vw - 10px");
-            height: auto;
+            height: calc("(100vw-10px)*9/21");
         }
     }
 }
