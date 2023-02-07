@@ -816,6 +816,11 @@ hr {
     height: 75px;
 }
 
+.sponsors>.enlarge {
+    height: 90px;
+    padding: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .sponsors>img {
         padding: 20px;
