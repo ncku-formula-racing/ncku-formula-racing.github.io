@@ -472,14 +472,60 @@ hr {
     }
 }
 
-
-/*
 @media screen and (max-width: 600px) {
     .grid {
-        display: none;
+        width: 96vw;
+        height: 286vw;
+        grid-template-columns: [c1] 47.25vw [c2] 47.25vw [c3];
+        grid-template-rows: [r1] 47.25vw [r2] 47.25vw [r3] 47.25vw [r4] 47.25vw [r5] 47.25vw [r6] 47.25vw [r7];
+    }
+    .g_logo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .g_vehicles {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        opacity: 0.9;
+    }
+    .g_history {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        opacity: 0.9;
+    }
+    .g_join {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        opacity: 0.9;
+    }
+    .g_fsae {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        opacity: 0.9;
+    }
+    .g_team {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        opacity: 0.9;
+    }
+    .g_sponsor {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        opacity: 0.9;
+    }
+    .g_ncku {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        animation-name: nckuout;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .g_blank {
+        background-color: #a6a9ab;
+        grid-column: 1/2;
+        grid-row: 6/7;
     }
 }
-*/
 
 
 /* join */
@@ -887,6 +933,15 @@ hr {
     margin-right: auto;
     width: 80%;
     border-collapse: collapse;
+}
+
+@media screen and (max-width: 600px) {
+    .sponsor_table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-collapse: collapse;
+    }
 }
 
 .sponsor_table th,
