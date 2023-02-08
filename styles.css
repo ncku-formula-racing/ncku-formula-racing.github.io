@@ -881,6 +881,9 @@ hr {
     .box_car {
         width: 100%;
     }
+    .box_car p {
+        font-size: 6vw;
+    }
     @supports not (aspect-ratio: 21/9) {
         .box_car {
             background-size: cover;
