@@ -8,61 +8,6 @@
     src: url(fonts/NotoSans-Regular.ttf) format("truetype");
 }
 
-@media only screen and (max-width: 600px) {
-    /* phones */
-    .d {
-        display: none;
-    }
-    .open-m {
-        display: block;
-    }
-    .t_box {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .cover {
-        max-width: 150%;
-        height: auto;
-        margin-left: -25%;
-    }
-}
-
-@media only screen and (min-width:601px) and (max-width: 1255px) {
-    /* tablets */
-    .d {
-        display: none;
-    }
-    .open-m {
-        display: block;
-    }
-    .t_box {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .cover {
-        max-width: 130%;
-        height: auto;
-        margin-left: -15%;
-    }
-}
-
-@media only screen and (min-width: 1256px) {
-    /* desktop */
-    .open-m {
-        display: none;
-    }
-    .t_box {
-        padding-left: 75px;
-        padding-right: 75px;
-    }
-    .cover {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 
 /*disable horizontal scolling*/
 
@@ -189,6 +134,61 @@ header {
         margin-top: 10px;
         width: 150px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* phones */
+    .d {
+        display: none;
+    }
+    .open-m {
+        display: block;
+    }
+    .t_box {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .cover {
+        max-width: 150%;
+        height: auto;
+        margin-left: -25%;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width: 1255px) {
+    /* tablets */
+    .d {
+        display: none;
+    }
+    .open-m {
+        display: block;
+    }
+    .t_box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .cover {
+        max-width: 130%;
+        height: auto;
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (min-width: 1256px) {
+    /* desktop */
+    .open-m {
+        display: none;
+    }
+    .t_box {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .cover {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -323,11 +323,11 @@ hr {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .container h1 {
-    color: white;
+    color: #ffffff;
     font-size: 6vw;
     position: absolute;
     top: 50%;
@@ -337,9 +337,6 @@ hr {
 
 
 /* home v2*/
-
-
-/*bgimg 512x512px gridline:16.7px*/
 
 .grid {
     margin-left: auto;
@@ -545,7 +542,7 @@ hr {
     padding: 0 5px;
     position: relative;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .join_c img {
@@ -553,7 +550,7 @@ hr {
 }
 
 .join_c h1 {
-    color: white;
+    color: #ffffff;
     font-size: 6vw;
     position: absolute;
     top: 50%;
@@ -634,7 +631,7 @@ hr {
 .member_list th {
     padding-top: 12px;
     padding-bottom: 12px;
-    color: white;
+    color: #ffffff;
     background-color: #a31f34;
 }
 
@@ -707,7 +704,7 @@ hr {
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
+    background-color: #ffffff;
     border: 4px solid #8c6e4a;
     top: 15px;
     border-radius: 50%;
@@ -928,7 +925,7 @@ hr {
 .sponsor_table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    color: white;
+    color: #ffffff;
     background-color: #a31f34;
 }
 
@@ -982,7 +979,7 @@ hr {
     right: 10px;
     padding: 5px 5px;
     background-color: #420a15;
-    color: white;
+    color: #ffffff;
     width: 36px;
     border-radius: 0px 0px 10px 10px;
     z-index: 99;
