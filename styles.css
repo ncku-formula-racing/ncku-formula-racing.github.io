@@ -1082,6 +1082,11 @@ hr {
 /* lang */
 
 .lang {
+    /* temporary disabled */
+    display: none;
+}
+
+.lang {
     position: fixed;
     top: 0;
     right: 10px;
