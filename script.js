@@ -65,7 +65,7 @@ function toggleTable() {
 // version
 
 
-var version = "v5.0"; //小版本放小數點後一位 大版本(屆數)為個位數
+var version = "v5.1"; //小版本放小數點後一位 大版本(屆數)為個位數
 var date = "2023/3/13"; //Official release date: TBC
 
 function ver() {
