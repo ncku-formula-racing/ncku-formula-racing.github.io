@@ -824,11 +824,164 @@ hr {
 }
 
 .box_car p {
+    /*display: none;*/
     font-family: Conthrax;
     font-size: 4vw;
     font-weight: 900;
     color: #e4002b;
     position: absolute;
+}
+
+.box_car:hover #t35 {
+    display: inline-block;
+    animation-name: ck35-in;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+#t35 {
+    display: inline-block;
+    animation-name: ck35-out;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+.box_car:hover #t3 {
+    display: inline-block;
+    animation-name: ck3-in;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+#t3 {
+    display: inline-block;
+    animation-name: ck3-out;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+.box_car:hover #t2 {
+    display: inline-block;
+    animation-name: ck2-in;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+#t2 {
+    display: inline-block;
+    animation-name: ck2-out;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+.box_car:hover #t1 {
+    display: inline-block;
+    animation-name: ck1-in;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+#t1 {
+    display: inline-block;
+    animation-name: ck1-out;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(.66, .12, .49, .9);
+    animation-fill-mode: forwards;
+}
+
+@keyframes ck35-in {
+    from {
+        opacity: 0;
+        right: 0vw;
+    }
+    to {
+        opacity: 1;
+        right: 96vw;
+    }
+}
+
+@keyframes ck35-out {
+    from {
+        opacity: 1;
+        right: 96vw;
+    }
+    to {
+        opacity: 0;
+        right: 0vw;
+    }
+}
+
+@keyframes ck3-in {
+    from {
+        opacity: 0;
+        right: 50vw;
+    }
+    to {
+        opacity: 1;
+        right: 4vw;
+    }
+}
+
+@keyframes ck3-out {
+    from {
+        opacity: 1;
+        right: 4vw;
+    }
+    to {
+        opacity: 0;
+        right: 50vw;
+    }
+}
+
+@keyframes ck2-in {
+    from {
+        opacity: 0;
+        right: 50vw;
+    }
+    to {
+        opacity: 1;
+        right: 4vw;
+    }
+}
+
+@keyframes ck2-out {
+    from {
+        opacity: 1;
+        right: 4vw;
+    }
+    to {
+        opacity: 0;
+        right: 50vw;
+    }
+}
+
+@keyframes ck1-in {
+    from {
+        opacity: 0;
+        right: 0vw;
+    }
+    to {
+        opacity: 1;
+        right: 96vw;
+    }
+}
+
+@keyframes ck1-out {
+    from {
+        opacity: 1;
+        right: 96vw;
+    }
+    to {
+        opacity: 0;
+        right: 0vw;
+    }
 }
 
 .ck3_5 {
