@@ -525,40 +525,6 @@ hr {
 }
 
 
-/* join */
-
-.join {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 5px;
-}
-
-.join_c {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 5px;
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-}
-
-.join_c img {
-    width: 100%;
-}
-
-.join_c h1 {
-    color: #ffffff;
-    font-size: 6vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
 /* team */
 
 .member {
@@ -578,54 +544,14 @@ hr {
     width: 180px;
 }
 
-.box_team {
-    opacity: 0.9;
-    line-height: 200px;
-    height: 250px;
-    width: 20%;
+.team {
+    vertical-align: text-top;
     display: inline-block;
-    padding: 20px;
-    text-align: center;
-    background-size: 250px 250px;
-    background-position-x: center;
-    background-repeat: no-repeat;
+    padding: 15px;
 }
 
-.box_team p {
-    font-size: 2.5vw;
-    font-style: bold;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 600px) {
-    .box_team {
-        width: 100%;
-        margin: 5px;
-    }
-    .box_team p {
-        font-size: 10vw;
-    }
-}
-
-.body {
-    background-image: url(./img/body.JPG);
-}
-
-.chassis {
-    background-image: url(./img/chassis.JPG);
-}
-
-.electric {
-    background-image: url(./img/electric.jpg);
-}
-
-.marketing {
-    background-image: url(./img/marketing.JPG);
-}
-
-.box_team:hover {
-    opacity: 1;
-    /*filter: brightness(90%);*/
+.team>h3 {
+    color: #8c6e4a;
 }
 
 .member_list th {
