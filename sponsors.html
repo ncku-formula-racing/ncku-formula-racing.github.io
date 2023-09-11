@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <title>成大方程式賽車隊 | 贊助</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="NCKU, FSAE, Forumla, Racing, Formula Racing, 成大方程式賽車隊, 成大, 成功大學, 成功大學方程式賽車隊, 方程式賽車隊" />
+    <meta name="author" content="成大方程式賽車隊" />
+    <meta name="description" content="成大方程式賽車隊" />
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ce85bf40c6.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="menu">
+        <a href="index.html"><img class="logo " src="./logo/logo_w.png"></a>
+        <div class="menu-r">
+            <!--Order is reversed-->
+            <a href="contact.html" style="font-weight: bold;" class="d">聯絡我們</a>
+            <a href="sponsors.html" style="font-weight: bold;" class="d">贊助</a>
+            <a href="vehicles.html" style="font-weight: bold;" class="d">車輛</a>
+            <a href="about.html" style="font-weight: bold;" class="d">團隊</a>
+            <a href="index.html" style="font-weight: bold;" class="d">首頁</a>
+            <a href="javascript:void(0)" onclick="openNav()" class="open-m">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+    </div>
+    <!--Set to current page but different lang-->
+    <div class="lang">
+        <a href="./en/sponsors.html"><img src="./img/zh.png" width="17px"></a>
+    </div>
+</header>
+
+<body>
+    <div class="menu-m" id="m">
+        <a href="javascript:void(0)" onclick="closeNav()" class="close-m">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <a href="index.html" style="font-weight: bold;">首頁</a>
+        <a href="about.html" style="font-weight: bold;">團隊</a>
+        <a href="vehicles.html" style="font-weight: bold;">車輛</a>
+        <a href="sponsors.html" style="font-weight: bold;">贊助</a>
+        <a href="contact.html" style="font-weight: bold;">聯絡我們</a>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <div class="t_box">
+        <h1>贊助</h1>
+        <p>感謝各位一路上的支持與協助，讓我們能夠實現這個賽車夢。</p>
+        <hr style="padding:20px;">
+        <a href="javascript:void(0)" onclick="toggleCont()">
+            <div class="btn">
+                <h3 style="color:#ffffff;">我想贊助</h3>
+            </div>
+        </a>
+        <div id="contact_spon">
+            <p>若是您想贊助我們，您可以透過下方的表格聯絡我們，或是直接<a href="contact.html" style="color:#a31f34;font-weight:bold;">寄信</a>給我們。</p>
+            <hr style="padding: 15px;">
+            <div class="mail">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkjlbgr" method="post" target="_blank">
+                    <fieldset id="fs-frm-inputs">
+                        <label for="full-name">姓名<span style="color:#e4002b;">*</span></label>
+                        <input type="text" name="name" id="full-name" placeholder="你的名字" required />
+                        <label for="email-address">電子信箱<span style="color:#e4002b;">*</span></label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="你的email" required />
+                        <label for="message">內容<span style="color:#e4002b;">*</span></label>
+                        <textarea rows="5" name="message" id="message" placeholder="你要說的內容..." required></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="傳送">
+                </form>
+            </div>
+            <hr style="padding: 15px;">
+            <h2>2023年贊助回饋方案</h2>
+            <table class="sponsor_table">
+                <tr>
+                    <th rowspan="2"></th>
+                    <th rowspan="2">贊助金額</th>
+                    <th colspan="5">回饋方案</th>
+                </tr>
+                <tr>
+                    <th>賽車商標</th>
+                    <th>新車發表會Truss</th>
+                    <th>隊服商標</th>
+                    <th>比賽感謝板</th>
+                    <th>粉專感謝文</th>
+                </tr>
+                <tr>
+                    <th>LV1</th>
+                    <td>未滿1萬</td>
+                    <td>小型</td>
+                    <td>V</td>
+                    <td></td>
+                    <td></td>
+                    <td>限時動態 1篇</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">LV2</th>
+                    <td>1萬以上<br>未滿5萬</td>
+                    <td>小型</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>貼文 1篇</td>
+                </tr>
+                <tr>
+                    <td>軟體</td>
+                    <td>小型</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>貼文 1篇</td>
+                </tr>
+                <tr>
+                    <th>LV3</th>
+                    <td>5萬以上<br>未滿10萬</td>
+                    <td>小型</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>限時動態 1篇<br>貼文 1篇</td>
+                </tr>
+                <tr>
+                    <th>LV4</th>
+                    <td>10萬以上<br>未滿20萬</td>
+                    <td>中型</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>貼文 2篇</td>
+                </tr>
+                <tr>
+                    <th>LV5</th>
+                    <td>20萬以上<br>未滿50萬</td>
+                    <td>大型</td>
+                    <td>V<br>(正反雙面)</td>
+                    <td>V<br>(放置袖口)</td>
+                    <td>V</td>
+                    <td>貼文 至少2篇</td>
+                </tr>
+                <tr>
+                    <th>LV6</th>
+                    <td>50萬以上<br>未滿100萬</td>
+                    <td>大型<br>(自選位置)</td>
+                    <td>V<br>(正反雙面)</td>
+                    <td>V<br>(放置胸口)</td>
+                    <td>V</td>
+                    <td>貼文 至少2篇</td>
+                </tr>
+                <tr>
+                    <th>LV7</th>
+                    <td>100萬以上</td>
+                    <td>大型<br>(自選位置)</td>
+                    <td>V<br>(正反雙面)</td>
+                    <td>V<br>(放置胸口)</td>
+                    <td>V</td>
+                    <td>貼文 至少2篇</td>
+                </tr>
+            </table>
+            <p>*如有任何其他需求，歡迎另外<a href="contact.html" style="color:#a31f34;font-weight:bold;">洽詢車隊</a>詳談。</p>
+        </div>
+        <!--hr style="padding:50px;">
+        <h2 class="cont" id="spon_2023">2023</h2>
+        <div class="sponsors">
+            <a href="http://ytli.org.tw/" target="_blank">
+                <img src="./img/sponsors/ytli.png">
+            </a>
+            <a href="https://www.nanpao.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/nanpao.png">
+            </a>
+            <a href="https://www.cens.com/cens/html/zh/supplier/supplier_home_1659.html" target="_blank">
+                <img class="enlarge" src="./img/sponsors/ssl.png">
+            </a>
+            <a href="https://www.wisdomshare.com.tw/" target="_blank">
+                <img src="./img/sponsors/wisdomshare.png">
+            </a>
+            <a href="https://www.bliksen.com/zh-hant/" target="_blank">
+                <img src="./img/sponsors/bliksen.png">
+            </a>
+            <a href="https://www.molicel.com/cn/" target="_blank">
+                <img src="./img/sponsors/molicel.png">
+            </a>
+            <img src="./img/sponsors/me81.png">
+            <a href="https://www.skf.com/tw" target="_blank">
+                <img src="./img/sponsors/skf.png">
+            </a>
+            <a href="https://www.kde1984.com/" target="_blank">
+                <img src="./img/sponsors/kile.png">
+            </a>
+            <a href="https://www.chromaate.com/tw/" target="_blank">
+                <img src="./img/sponsors/chroma.png">
+            </a>
+            <a href="http://www.hondar.com.tw/" target="_blank">
+                <img src="./img/sponsors/hondar.png">
+            </a>
+            <a href="https://www.3m.com.tw" target="_blank">
+                <img src="./img/sponsors/3m.jpg">
+            </a>
+            <a href="https://www.itri.org.tw" target="_blank">
+                <img src="./img/sponsors/itri.png">
+            </a>
+            <a href="https://www.deltaww.com/" target="_blank">
+                <img src="./img/sponsors/delta.png">
+            </a>
+            <a href="http://www.bondtronics.com.tw/" target="_blank">
+                <img src="./img/sponsors/bondtronics.png">
+            </a>
+            <a href="https://sites.google.com/site/a86882268/" target="_blank">
+                <img src="./img/sponsors/lotus.png">
+            </a>
+            <a href="https://glxpcb.com/" target="_blank">
+                <img src="./img/sponsors/galaxy.png">
+            </a>
+            <a href="http://www.linpo.com.tw/" target="_blank">
+                <img src="./img/sponsors/hrs.png">
+            </a>
+            <a href="https://www.tanko.com.tw/" target="_blank">
+                <img src="./img/sponsors/tanko.png">
+            </a>
+            <a href="https://3dconnexion.com/tw/spacemouse/?gad=1" target="_blank">
+                <img src="./img/sponsors/3dconnexion.png">
+            </a>
+            <a href="https://tw-3dp.com/" target="_blank">
+                <img src="./img/sponsors/minyau.png">
+            </a>
+            <a href="https://www.henkel-adhesives.com/tw/zh_tw/about/our-brands/loctite.html" target="_blank">
+                <img src="./img/sponsors/loctite.png">
+            </a>
+            <a href="http://www.ftc.com.tw/defaultc.htm" target="_blank">
+                <img src="./img/sponsors/formosa.png">
+            </a>
+            <a href="https://www.epolab.com/?lang=tw" target="_blank">
+                <img src="./img/sponsors/epolab.png">
+            </a>
+            <a href="http://www.manzai.com.tw/" target="_blank">
+                <img src="./img/sponsors/manzai.png">
+            </a>
+            <a href="https://triplessuspension.com.tw/" target="_blank">
+                <img src="./img/sponsors/triples.png">
+            </a>
+            <a href="https://www.kisssoft.com/" target="_blank">
+                <img src="./img/sponsors/kisssoft.png">
+            </a>
+            <a href="https://www.rbtch-honeycomb.com/tw/" target="_blank">
+                <img src="./img/sponsors/rbtch.png">
+            </a>
+            <a href="https://www.kss.com.tw/" target="_blank">
+                <img src="./img/sponsors/kss.png">
+            </a>
+            <a href="https://www.igus.com.tw/" target="_blank">
+                <img src="./img/sponsors/igus.png">
+            </a>
+            <a href="https://www.uc-gn.com/" target="_blank">
+                <img src="./img/sponsors/rk.png">
+            </a>
+            <a href="https://www.frando-brake.com/" target="_blank">
+                <img src="./img/sponsors/frando.png">
+            </a>
+            <a href="http://glam.tw/" target="_blank">
+                <img src="./img/sponsors/glam.png">
+            </a>
+            <a href="https://www.schrothracing.com/" target="_blank">
+                <img src="./img/sponsors/schroth.png">
+            </a>
+            <a href="https://twcn.rs-online.com/web/" target="_blank">
+                <img src="./img/sponsors/rs.png">
+            </a>
+            <a href="https://www.coroflex-cable.com/en/" target="_blank">
+                <img src="./img/sponsors/coroflex.png">
+            </a>
+            <a href="https://www.proskit.com.tw" target="_blank">
+                <img src="./img/sponsors/proskit.png">
+            </a>
+            <a href="https://www.macnica.com/apac/galaxy/zh_tw/" target="_blank">
+                <img src="./img/sponsors/macnica.png">
+            </a>
+            <a href="https://www.tsr.org.tw/h/index?key=r9z96" target="_blank">
+                <img src="./img/sponsors/tsr.png">
+            </a>
+            <a href="https://www.bossard.com/tw-zh-tw/" target="_blank">
+                <img src="./img/sponsors/bossard.png">
+            </a>
+            <a href="http://www.shyichang-gear.com/webls-zh-tw/index.html" target="_blank">
+                <img src="./img/sponsors/shiyichang.png">
+            </a>
+            <a href="http://www.kwsuspensions.tw/" target="_blank">
+                <img src="./img/sponsors/kw.png">
+            </a>
+            <a href="https://www.ncy-motor.com.tw/cht" target="_blank">
+                <img src="./img/sponsors/ncy.png">
+            </a>
+            <a href="https://www.facebook.com/RESinstrument/" target="_blank">
+                <img src="./img/sponsors/res.png">
+            </a>
+            <a href="https://www.founderland.com.tw/" target="_blank">
+                <img src="./img/sponsors/eco.png">
+            </a>
+            <a href="https://www.tongtai.com.tw/tw/index.php" target="_blank">
+                <img class="enlarge" src="./img/sponsors/tongtai.png">
+            </a>
+        </div-->
+        <hr style="padding:50px;">
+        <h2 class="cont" id="spon_2022">2022</h2>
+        <div class="sponsors">
+            <a href="http://ytli.org.tw/" target="_blank">
+                <img src="./img/sponsors/ytli.png">
+            </a>
+            <a href="https://www.autodesk.com.tw/" target="_blank">
+                <img src="./img/sponsors/autodesk.png">
+            </a>
+            <a href="https://www.nanpao.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/nanpao.png">
+            </a>
+            <a href="https://www.bliksen.com/zh-hant/" target="_blank">
+                <img src="./img/sponsors/bliksen.png">
+            </a>
+            <a href="https://www.skf.com/tw" target="_blank">
+                <img src="./img/sponsors/skf.png">
+            </a>
+            <a href="https://www.chromaate.com/tw/" target="_blank">
+                <img src="./img/sponsors/chroma.png">
+            </a>
+            <img src="./img/sponsors/me73.png">
+            <a href="https://www.pitotech.com.tw/" target="_blank">
+                <img src="./img/sponsors/pitotech.png">
+            </a>
+            <a href="http://www.hanyitek.com/" target="_blank">
+                <img src="./img/sponsors/hanyi.png">
+            </a>
+            <a href="http://www.king-light.com/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/milwaukee.png">
+            </a>
+            <a href="https://ncku.edu.tw" target="_blank">
+                <img class="enlarge" src="./img/sponsors/ncku.png">
+            </a>
+            <a href="http://www.ftc.com.tw/defaultc.htm" target="_blank">
+                <img src="./img/sponsors/formosa.png">
+            </a>
+            <a href="https://www.anjitek.com/" target="_blank">
+                <img src="./img/sponsors/anji.png">
+            </a>
+            <a href="http://www.kwsuspensions.tw/" target="_blank">
+                <img src="./img/sponsors/kw.png">
+            </a>
+            <a href="https://www.kss.com.tw/" target="_blank">
+                <img src="./img/sponsors/kss.png">
+            </a>
+            <a href="http://www.hondar.com.tw/" target="_blank">
+                <img src="./img/sponsors/hondar.png">
+            </a>
+            <a href="https://www.rbtch-honeycomb.com/tw/" target="_blank">
+                <img src="./img/sponsors/rbtch.png">
+            </a>
+            <a href="https://glxpcb.com/" target="_blank">
+                <img src="./img/sponsors/galaxy.png">
+            </a>
+            <a href="https://triplessuspension.com.tw/" target="_blank">
+                <img src="./img/sponsors/triples.png">
+            </a>
+            <a href="http://www.linpo.com.tw/" target="_blank">
+                <img src="./img/sponsors/hrs.png">
+            </a>
+            <a href="https://www.bossard.com/tw-zh-tw/" target="_blank">
+                <img src="./img/sponsors/bossard.png">
+            </a>
+            <a href="https://zh-tw.facebook.com/ESJVGW1/" target="_blank">
+                <img src="./img/sponsors/eshijie.png">
+            </a>
+            <a href="https://www.igus.com.tw/" target="_blank">
+                <img src="./img/sponsors/igus.png">
+            </a>
+            <a href="https://anenergy.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/anenergy.png">
+            </a>
+            <a href="https://superbattery.com.tw/h/Index?key=8bbrp" target="_blank">
+                <img class="enlarge" src="./img/sponsors/superbattery.png">
+            </a>
+            <a href="https://www.tsr.org.tw/h/index?key=r9z96" target="_blank">
+                <img src="./img/sponsors/tsr.png">
+            </a>
+            <a href="http://www.shaomei.com.tw/" target="_blank">
+                <img src="./img/sponsors/shaomei.png">
+            </a>
+            <a href="https://www.uc-gn.com/" target="_blank">
+                <img src="./img/sponsors/rk.png">
+            </a>
+            <a href="https://www.frando-brake.com/" target="_blank">
+                <img src="./img/sponsors/frando.png">
+            </a>
+            <a href="https://www.mouser.tw/" target="_blank">
+                <img src="./img/sponsors/mouser.png">
+            </a>
+            <a href="http://www.manzai.com.tw/" target="_blank">
+                <img src="./img/sponsors/manzai.png">
+            </a>
+            <a href="https://www.ystech.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/ystech.png">
+            </a>
+            <a href="https://www.tongtai.com.tw/tw/index.php" target="_blank">
+                <img class="enlarge" src="./img/sponsors/tongtai.png">
+            </a>
+            <a href="https://www.unilli.com/_tw/" target="_blank">
+                <img src="./img/sponsors/unilli.png">
+            </a>
+            <a href="https://www.founderland.com.tw/" target="_blank">
+                <img src="./img/sponsors/eco.png">
+            </a>
+            <a href="https://www.facebook.com/RESinstrument/" target="_blank">
+                <img src="./img/sponsors/res.png">
+            </a>
+            <a href="https://tw-3dp.com/" target="_blank">
+                <img src="./img/sponsors/minyau.png">
+            </a>
+            <a href="https://www.acer.com/" target="_blank">
+                <img src="./img/sponsors/acer.png">
+            </a>
+            <img src="./img/sponsors/pingde.png">
+            <a href="https://www.racingbros.com/TW/index" target="_blank">
+                <img src="./img/sponsors/racingbros.png">
+            </a>
+            <a href="https://www2.macnica.com/apac/anstek/" target="_blank">
+                <img src="./img/sponsors/anstek.png">
+            </a>
+            <a href="http://www.shyichang-gear.com/webls-zh-tw/index.html" target="_blank">
+                <img src="./img/sponsors/shiyichang.png">
+            </a>
+            <a href="http://glam.tw/" target="_blank">
+                <img src="./img/sponsors/glam.png">
+            </a>
+        </div>
+        <hr style="padding:50px;">
+        <h2 class="cont" id="spon_2021">2021</h2>
+        <div class="sponsors">
+            <a href="https://www.cens.com/cens/html/zh/supplier/supplier_home_1659.html" target="_blank">
+                <img class="enlarge" src="./img/sponsors/ssl.png">
+            </a>
+            <a href="https://www.kisssoft.com/" target="_blank">
+                <img src="./img/sponsors/kisssoft.png">
+            </a>
+            <a href="https://www.tongtai.com.tw/tw/index.php" target="_blank">
+                <img class="enlarge" src="./img/sponsors/tongtai.png">
+            </a>
+            <a href="https://www.cmsteel.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/chengmao.png">
+            </a>
+            <a href="https://www.tanko.com.tw/" target="_blank">
+                <img src="./img/sponsors/tanko.png">
+            </a>
+            <a href="http://www.manzai.com.tw/" target="_blank">
+                <img src="./img/sponsors/manzai.png">
+            </a>
+            <a href="http://www.hanyitek.com/" target="_blank">
+                <img src="./img/sponsors/hanyi.png">
+            </a>
+            <a href="https://rapidchemical.com.tw/" target="_blank">
+                <img src="./img/sponsors/rapidchem.png">
+            </a>
+            <a href="https://hexagon.com/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/hexagonmsc.png">
+            </a>
+            <a href="https://hexagon.com/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/hexagonromax.png">
+            </a>
+            <img src="./img/sponsors/me67.png">
+            <img src="./img/sponsors/me59.png">
+            <img src="./img/sponsors/me81.png">
+            <img src="./img/sponsors/me79.png">
+            <img src="./img/sponsors/me71.png">
+            <a href="https://www.chromaate.com/" target="_blank">
+                <img src="./img/sponsors/chroma.png">
+            </a>
+            <a href="https://www.deltaww.com/" target="_blank">
+                <img src="./img/sponsors/delta.png">
+            </a>
+            <a href="https://hioki.tw/" target="_blank">
+                <img src="./img/sponsors/hioki.png">
+            </a>
+            <a href="http://www.shyichang-gear.com/webls-zh-tw/index.html" target="_blank">
+                <img src="./img/sponsors/shiyichang.png">
+            </a>
+            <a href="https://www.carchland.com.tw/" target="_blank">
+                <img src="./img/sponsors/carchland.png">
+            </a>
+            <a href="https://whirlpower.com.tw/" target="_blank">
+                <img src="./img/sponsors/whirlpower.png">
+            </a>
+            <a href="http://glam.tw/" target="_blank">
+                <img src="./img/sponsors/glam.png">
+            </a>
+            <a href="https://www.skf.com/tw" target="_blank">
+                <img src="./img/sponsors/skf.png">
+            </a>
+            <a href="https://www.donho.com.tw/" target="_blank">
+                <img src="./img/sponsors/donho.png">
+            </a>
+            <a href="https://www.molicel.com/cn/" target="_blank">
+                <img src="./img/sponsors/molicel.png">
+            </a>
+            <a href="https://www.mouser.tw/" target="_blank">
+                <img src="./img/sponsors/mouser.png">
+            </a>
+            <a href="http://www.syntecclub.com/" target="_blank">
+                <img src="./img/sponsors/syntec.png">
+            </a>
+            <a href="https://www.frando-brake.com/" target="_blank">
+                <img src="./img/sponsors/frando.png">
+            </a>
+            <a href="https://makita.com.tw" target="_blank">
+                <img src="./img/sponsors/makita.png">
+            </a>
+            <a href="https://www.ncy-motor.com.tw/cht" target="_blank">
+                <img src="./img/sponsors/ncy.png">
+            </a>
+            <a href="https://www.facebook.com/RESinstrument/" target="_blank">
+                <img src="./img/sponsors/res.png">
+            </a>
+            <a href="https://www.proskit.com.tw" target="_blank">
+                <img src="./img/sponsors/proskit.png">
+            </a>
+            <a href="https://zeus-helmets.tw" target="_blank">
+                <img src="./img/sponsors/zeus.png">
+            </a>
+            <a href="https://www.pitotech.com.tw" target="_blank">
+                <img src="./img/sponsors/pitotech.png">
+            </a>
+            <a href="https://startup.ncku.edu.tw" target="_blank">
+                <img src="./img/sponsors/nckuspdup.png">
+            </a>
+            <a href="https://www.me.ncku.edu.tw" target="_blank">
+                <img src="./img/sponsors/nckume.png">
+            </a>
+            <a href="https://bnwbrick.com" target="_blank">
+                <img src="./img/sponsors/bw.png">
+            </a>
+            <img src="./img/sponsors/csl.png">
+            <a href="https://www.igus.com.tw/" target="_blank">
+                <img src="./img/sponsors/igus.png">
+            </a>
+            <a href="https://anenergy.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/anenergy.png">
+            </a>
+            <a href="https://www.racingbros.com/TW/index" target="_blank">
+                <img src="./img/sponsors/racingbros.png">
+            </a>
+            <a href="https://twcn.rs-online.com/web/" target="_blank">
+                <img src="./img/sponsors/rs.png">
+            </a>
+            <a href="https://sonictoolsusa.com" target="_blank">
+                <img src="./img/sponsors/sonic.png">
+            </a>
+            <a href="https://www.3m.com.tw" target="_blank">
+                <img src="./img/sponsors/3m.jpg">
+            </a>
+            <a href="https://triplessuspension.com.tw/" target="_blank">
+                <img src="./img/sponsors/triples.png">
+            </a>
+            <a href="https://www.tsr.org.tw/h/index?key=r9z96" target="_blank">
+                <img src="./img/sponsors/tsr.png">
+            </a>
+            <a href="https://www.unilli.com/_tw/" target="_blank">
+                <img src="./img/sponsors/unilli.png">
+            </a>
+            <a href="https://www.ystech.com.tw/" target="_blank">
+                <img src="./img/sponsors/ystech.png">
+            </a>
+            <a href="https://superbattery.com.tw/h/Index?key=8bbrp" target="_blank">
+                <img class="enlarge" src="./img/sponsors/superbattery.png">
+            </a>
+            <a href="https://www.ksbond.com.tw" target="_blank">
+                <img src="./img/sponsors/ks.PNG">
+            </a>
+            <a href="https://www2.macnica.com/apac/anstek/" target="_blank">
+                <img src="./img/sponsors/anstek.png">
+            </a>
+            <a href="https://www.itri.org.tw" target="_blank">
+                <img src="./img/sponsors/itri.png">
+            </a>
+            <a href="https://www.ives.ncku.edu.tw/" target="_blank">
+                <img src="./img/sponsors/nckuives.png">
+            </a>
+            <img src="./img/sponsors/ss.png">
+            <a href="https://www.adgroup.com.tw" target="_blank">
+                <img class="enlarge" src="./img/sponsors/advancedgroup.png">
+            </a>
+            <a href="https://www.asazawa.com.tw" target="_blank">
+                <img src="./img/sponsors/honeycomb.png">
+            </a>
+            <a href="http://www.ftc.com.tw/defaultc.htm" target="_blank">
+                <img src="./img/sponsors/formosa.png">
+            </a>
+            <a href="http://www.king-light.com/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/milwaukee.png">
+            </a>
+            <a href="https://zh-tw.facebook.com/ESJVGW1/" target="_blank">
+                <img src="./img/sponsors/eshijie.png">
+            </a>
+            <a href="http://higem.ncku.edu.tw" target="_blank">
+                <img src="./img/sponsors/higem.png">
+            </a>
+            <a href="https://www.jspt.com.tw" target="_blank">
+                <img src="./img/sponsors/jspt.png">
+            </a>
+            <a href="https://www.founderland.com.tw/" target="_blank">
+                <img src="./img/sponsors/eco.png">
+            </a>
+            <a href="https://facebook.com/groups/2456807634636890" target="_blank">
+                <img src="./img/sponsors/chuantai.png">
+            </a>
+            <img src="./img/sponsors/rentai.png">
+            <img src="./img/sponsors/tianhe.png">
+            <img src="./img/sponsors/yusheng.png">
+        </div>
+        <!--
+            temp
+            </a>
+            <a href="" target="_blank">
+        -->
+        <hr style="padding:50px;">
+        <h2 class="cont" id="spon_2020">2020</h2>
+        <div class="sponsors">
+            <a href="https://ncku.edu.tw" target="_blank">
+                <img class="enlarge" src="./img/sponsors/ncku.png">
+            </a>
+            <a href="https://ttbic.ncku.edu.tw/index.php?Lang=zh-tw" target="_blank">
+                <img class="enlarge" src="./img/sponsors/nckuttbic.png">
+            </a>
+            <a href="https://gloria.ncku.edu.tw/p/412-1094-23149.php?Lang=zh-tw" target="_blank">
+                <img class="enlarge" src="./img/sponsors/nckugloria.png">
+            </a>
+            <a href="http://km.emotors.ncku.edu.tw/emotor/new/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/emtrc.png">
+            </a>
+            <img src="./img/sponsors/me57.png">
+            <img src="./img/sponsors/me60.png">
+            <a href="https://www.me.ncku.edu.tw" target="_blank">
+                <img src="./img/sponsors/nckume.png">
+            </a>
+            <a href="https://www.wisdomshare.com.tw/" target="_blank">
+                <img src="./img/sponsors/wisdomshare.png">
+            </a>
+            <a href="https://www.chenta.com/tw" target="_blank">
+                <img src="./img/sponsors/chentagear.png">
+            </a>
+            <a href="https://www.donho.com.tw/" target="_blank">
+                <img src="./img/sponsors/donho.png">
+            </a>
+            <a href="https://www2.macnica.com/apac/anstek/" target="_blank">
+                <img src="./img/sponsors/anstek.png">
+            </a>
+            <img src="./img/sponsors/doubleeagle.png">
+            <a href="https://www.fcc-net.co.jp/fcctw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/fcc.png">
+            </a>
+            <img src="./img/sponsors/me81.png">
+            <a href="https://www.mirdc.org.tw/index.aspx" target="_blank">
+                <img class="enlarge" src="./img/sponsors/metal.png">
+            </a>
+            <a href="https://www.cmsteel.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/chengmao.png">
+            </a>
+            <a href="https://www.wahlee.com/ZH" target="_blank">
+                <img src="./img/sponsors/wl.png">
+            </a>
+            <a href="https://www.deltaww.com/" target="_blank">
+                <img src="./img/sponsors/delta.png">
+            </a>
+            <a href="https://www.chromaate.com/tw/" target="_blank">
+                <img src="./img/sponsors/chroma.png">
+            </a>
+            <a href="https://www.skf.com/tw" target="_blank">
+                <img src="./img/sponsors/skf.png">
+            </a>
+            <a href="https://www.asazawa.com.tw" target="_blank">
+                <img src="./img/sponsors/honeycomb.png">
+            </a>
+            <a href="http://www.hanyitek.com/" target="_blank">
+                <img src="./img/sponsors/hanyi.png">
+            </a>
+            <a href="http://www.ftc.com.tw/defaultc.htm" target="_blank">
+                <img src="./img/sponsors/formosa.png">
+            </a>
+            <a href="https://www.mouser.tw/" target="_blank">
+                <img src="./img/sponsors/mouser.png">
+            </a>
+            <a href="https://zeus-helmets.tw" target="_blank">
+                <img src="./img/sponsors/zeus.png">
+            </a>
+            <a href="https://www.benderinc.com/" target="_blank">
+                <img src="./img/sponsors/bender.png">
+            </a>
+            <a href="https://www.ksbond.com.tw/zh-tw/" target="_blank">
+                <img src="./img/sponsors/ks.PNG">
+            </a>
+            <a href="https://tw.misumi-ec.com/" target="_blank">
+                <img src="./img/sponsors/misumi.png">
+            </a>
+            <a href="https://www.ncy-motor.com.tw/cht" target="_blank">
+                <img src="./img/sponsors/ncy.png">
+            </a>
+            <a href="http://www.inner-energy.com.tw/" target="_blank">
+                <img src="./img/sponsors/nerenergy.png">
+            </a>
+            <a href="https://hexagon.com/" target="_blank">
+                <img src="./img/sponsors/msc.png">
+            </a>
+            <a href="https://www.amitatech.com/" target="_blank">
+                <img src="./img/sponsors/amita.png">
+            </a>
+            <a href="http://www.singyung.com.tw/" target="_blank">
+                <img src="./img/sponsors/singyung.png">
+            </a>
+            <a href="http://3dprinting.com.tw/" target="_blank">
+                <img src="./img/sponsors/3dprint.png">
+            </a>
+            <a href="https://www.racingbros.com/TW/index" target="_blank">
+                <img src="./img/sponsors/racingbros.png">
+            </a>
+            <a href="http://www.yongchai.com.tw/" target="_blank">
+                <img src="./img/sponsors/yz.png">
+            </a>
+            <a href="http://www.dodge-carbon.com.tw/" target="_blank">
+                <img src="./img/sponsors/dodge.png">
+            </a>
+            <a href="https://www.uc-gn.com/" target="_blank">
+                <img src="./img/sponsors/rk.png">
+            </a>
+            <a href="https://www.everwide.com.tw/" target="_blank">
+                <img src="./img/sponsors/yk.png">
+            </a>
+            <a href="https://www.unilli.com/_tw/" target="_blank">
+                <img src="./img/sponsors/unilli.png">
+            </a>
+            <a href="http://www.shoraipower.com.tw/" target="_blank">
+                <img src="./img/sponsors/shorai.png">
+            </a>
+            <a href="https://twcn.rs-online.com/web/" target="_blank">
+                <img src="./img/sponsors/rs.png">
+            </a>
+            <a href="https://bnwbrick.com" target="_blank">
+                <img src="./img/sponsors/bw.png">
+            </a>
+            <a href="https://www.kymco.com.tw/" target="_blank">
+                <img src="./img/sponsors/kymco.png">
+            </a>
+            <a href="https://www.facebook.com/people/%E8%94%9A%E9%8B%92%E4%BC%81%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/100057018327191/" target="_blank">
+                <img src="./img/sponsors/wei.png">
+            </a>
+            <img src="./img/sponsors/zhou.png">
+            <a href="https://www.pinsyun.com.tw/" target="_blank">
+                <img src="./img/sponsors/pinsyun.png">
+            </a>
+            <a href="https://www.unical.com.tw/" target="_blank">
+                <img src="./img/sponsors/unicalsonic.png">
+            </a>
+            <a href="https://www.nizing.com.tw/zh" target="_blank">
+                <img src="./img/sponsors/nizing.png">
+            </a>
+            <a href="https://taiwayltd.com.tw/taiway/About_TW/Company_Profile.html" target="_blank">
+                <img src="./img/sponsors/taiway.png">
+            </a>
+            <a href="https://www.cybernet-ap.com.tw/" target="_blank">
+                <img src="./img/sponsors/cybernet.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/sponsors/ss.png">
+            </a>
+        </div>
+        <hr style="padding:50px;">
+        <h2 class="cont" id="spon_2019">2019</h2>
+        <div class="sponsors">
+            <a href="https://www.wisdomshare.com.tw/" target="_blank">
+                <img src="./img/sponsors/wisdomshare.png">
+            </a>
+            <a href="http://www.hanbell.com/" target="_blank">
+                <img src="./img/sponsors/hanbell.png">
+            </a>
+            <a href="https://www.soco.com.tw/" target="_blank">
+                <img src="./img/sponsors/soco.png">
+            </a>
+            <a href="http://www.syntecclub.com/" target="_blank">
+                <img src="./img/sponsors/syntec.png">
+            </a>
+            <a href="https://www.tanko.com.tw/" target="_blank">
+                <img src="./img/sponsors/tanko.png">
+            </a>
+            <a href="https://www.cmsteel.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/chengmao.png">
+            </a>
+            <img src="./img/sponsors/me57.png">
+            <a href="https://www.fcc-net.co.jp/fcctw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/fcc.png">
+            </a>
+            <a href="https://makita.com.tw" target="_blank">
+                <img src="./img/sponsors/makita.png">
+            </a>
+            <a href="https://triones.com.tw/" target="_blank">
+                <img src="./img/sponsors/trionco.png">
+            </a>
+            <a href="https://www.asazawa.com.tw" target="_blank">
+                <img src="./img/sponsors/honeycomb.png">
+            </a>
+            <a href="https://www.ncy-motor.com.tw/cht" target="_blank">
+                <img src="./img/sponsors/ncy.png">
+            </a>
+            <a href="https://www.racingbros.com/TW/index" target="_blank">
+                <img src="./img/sponsors/racingbros.png">
+            </a>
+            <a href="https://www.benderinc.com/" target="_blank">
+                <img src="./img/sponsors/bender.png">
+            </a>
+            <a href="https://www.facebook.com/KytTaiwan/?locale=zh_TW" target="_blank">
+                <img src="./img/sponsors/kyt.png">
+            </a>
+            <a href="https://www.igus.com.tw/" target="_blank">
+                <img src="./img/sponsors/igus.png">
+            </a>
+            <a href="http://www.hondar.com.tw/" target="_blank">
+                <img src="./img/sponsors/hondar.png">
+            </a>
+            <a href="https://www.ives.ncku.edu.tw/" target="_blank">
+                <img src="./img/sponsors/nckuives.png">
+            </a>
+            <a href="https://www.kymco.com.tw/" target="_blank">
+                <img src="./img/sponsors/kymco.png">
+            </a>
+            <a href="https://twcn.rs-online.com/web/" target="_blank">
+                <img src="./img/sponsors/rs.png">
+            </a>
+            <a href="https://www.wellraytech.com/index.php/zh-tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/wracing.png">
+            </a>
+            <a href="https://www.unilli.com/_tw/" target="_blank">
+                <img src="./img/sponsors/unilli.png">
+            </a>
+            <a href="https://www.everwide.com.tw/" target="_blank">
+                <img src="./img/sponsors/yk.png">
+            </a>
+            <a href="https://taiwayltd.com.tw/taiway/About_TW/Company_Profile.html" target="_blank">
+                <img src="./img/sponsors/taiway.png">
+            </a>
+            <a href="https://www.wahlee.com/ZH" target="_blank">
+                <img src="./img/sponsors/wl.png">
+            </a>
+            <a href="https://www.founderland.com.tw/" target="_blank">
+                <img src="./img/sponsors/eco.png">
+            </a>
+            <a href="https://www.mitsubishi-motors.com.tw/" target="_blank">
+                <img src="./img/sponsors/mitsubishi.png">
+            </a>
+            <a href="https://www.china-motor.com.tw/" target="_blank">
+                <img src="./img/sponsors/chinamotor.png">
+            </a>
+            <a href="https://www.actekinc.com.tw/" target="_blank">
+                <img src="./img/sponsors/actek.png">
+            </a>
+            <a href="https://www.unical.com.tw/" target="_blank">
+                <img src="./img/sponsors/unicalsonic.png">
+            </a>
+            <a href="https://www.tek.com/tw" target="_blank">
+                <img src="./img/sponsors/tektronix.png">
+            </a>
+            <a href="http://www.tenmars.com/" target="_blank">
+                <img src="./img/sponsors/tenmars.png">
+            </a>
+            <a href="https://www.toptul.com.tw/zh-tw/" target="_blank">
+                <img src="./img/sponsors/toptul.png">
+            </a>
+            <a href="https://www.metabo.com.tw/" target="_blank">
+                <img src="./img/sponsors/metabo.png">
+            </a>
+            <a href="https://www.proskit.com.tw" target="_blank">
+                <img src="./img/sponsors/proskit.png">
+            </a>
+            <img src="./img/sponsors/jys.jpg">
+            <a href="https://www.phihong.com.tw/" target="_blank">
+                <img src="./img/sponsors/phihong.png">
+            </a>
+            <a href="https://www.facebook.com/people/%E8%8F%B2%E5%87%A1%E8%83%BD%E6%BA%90%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/100057214189223/" target="_blank">
+                <img src="./img/sponsors/masterhold.png">
+            </a>
+            <a href="https://www.nuvoton.com/" target="_blank">
+                <img src="./img/sponsors/nuvoton.png">
+            </a>
+            <img src="./img/sponsors/hongru.png">
+            <a href="http://www.spco.com.tw/" target="_blank">
+                <img src="./img/sponsors/spco.png">
+            </a>
+            <a href="https://www.pewc.com.tw/zh-tw/" target="_blank">
+                <img src="./img/sponsors/pewc.png">
+            </a>
+            <a href="http://www.yongchai.com.tw/" target="_blank">
+                <img src="./img/sponsors/yongzai.png">
+            </a>
+            <a href="https://unlifa.com.tw/" target="_blank">
+                <img class="enlarge" src="./img/sponsors/unlifa.png">
+            </a>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <h4 class="cont">#RaceBeyond</h4>
+    <a href="https://www.facebook.com/nckuformularacing/" target="_blank"><i
+        class='fab fa-facebook'></i></a>
+    <a href="https://www.instagram.com/nckuformularacing/" target="_blank"><i
+        class='fab fa-instagram'></i></a>
+    <a href="https://www.youtube.com/channel/UCZrO0mKGFS3_fs4XA1OUlFA" target="_blank"><i
+            class='fab fa-youtube'></i></a>
+    <p style="font-size: 12px;">Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script> NCKU Formula Racing. All Rights Reserved.</p>
+</footer>
+<script>
+</script>
+
+</html>

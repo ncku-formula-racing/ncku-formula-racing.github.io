@@ -657,7 +657,7 @@ hr {
 
 .btn {
     background-color: #a31f34;
-    border-radius: 25px;
+    border-radius: 10px;
     height: auto;
     padding: 10px 40px 10px 40px;
     width: auto;
@@ -1116,6 +1116,10 @@ hr {
 
 .sponsor_table tr:hover {
     background-color: #ddd;
+}
+
+#contact_spon {
+    display: none;
 }
 
 

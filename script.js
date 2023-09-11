@@ -62,6 +62,26 @@ function toggleTable() {
     }
 }
 
+function toggleCont() {
+    if (table == "0") {
+        /*const td = document.getElementById("mlist_t");
+        const nodes = td.getElementsByTagName("td");
+        for (let i = 0; i < nodes.length; i++) {
+            nodes[i].style.display = "table";
+        }*/
+        document.getElementById("contact_spon").style.display = "block";
+        table = "1";
+    } else {
+        /*const td = document.getElementById("mlist_t");
+        const nodes = td.getElementsByTagName("td");
+        for (let i = 0; i < nodes.length; i++) {
+            nodes[i].style.display = "none";
+        }*/
+        document.getElementById("contact_spon").style.display = "none";
+        table = "0";
+    }
+}
+
 // version
 
 var version = "v5.3"; //小版本放小數點後一位 大版本(屆數)為個位數
