@@ -1235,7 +1235,6 @@ hr {
 /* lang */
 
 .lang {
-    /* temporary disabled */
     display: none;
 }
 
@@ -1249,12 +1248,8 @@ hr {
     width: 36px;
     border-radius: 0px 0px 10px 10px;
     z-index: 99;
-}
-
-.lang a {
-    font-family: Noto;
-    text-decoration: none;
-    color: #ffffff;
+    border: 0px;
+    cursor: pointer;
 }
 
 

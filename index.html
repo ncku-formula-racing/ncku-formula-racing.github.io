@@ -23,8 +23,6 @@
 
 -->
 
-<!--copy of zh home page-->
-
 <head>
     <title>成大方程式賽車隊</title>
     <meta charset="utf-8" />
@@ -37,27 +35,29 @@
     <link rel="stylesheet" href="./styles.css" type="text/css" />
     <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/ce85bf40c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <header>
     <div class="menu">
-        <a href="./zh/home.html"><img class="logo" src="./logo/logo_w.png"></a>
+        <a href="./index.html"><img class="logo" src="./logo/logo_w.png"></a>
         <div class="menu-r">
             <!--Order is reversed-->
-            <a href="./zh/contact.html" style="font-weight: bold;" class="d">聯絡我們</a>
-            <a href="./zh/sponsors.html" style="font-weight: bold;" class="d">贊助</a>
-            <a href="./zh/vehicles.html" style="font-weight: bold;" class="d">車輛</a>
-            <a href="./zh/about.html" style="font-weight: bold;" class="d">團隊</a>
-            <a href="./zh/home.html" style="font-weight: bold;" class="d">首頁</a>
+            <a href="./contact.html" style="font-weight: bold;" class="d" lang="zh">聯絡我們</a>
+            <a href="./sponsors.html" style="font-weight: bold;" class="d" lang="zh">贊助</a>
+            <a href="./vehicles.html" style="font-weight: bold;" class="d" lang="zh">車輛</a>
+            <a href="./about.html" style="font-weight: bold;" class="d" lang="zh">團隊</a>
+            <a href="./index.html" style="font-weight: bold;" class="d" lang="zh">首頁</a>
+            <a href="./contact.html" style="font-weight: bold;" class="d" lang="en">Contact Us</a>
+            <a href="./sponsors.html" style="font-weight: bold;" class="d" lang="en">Sponsor</a>
+            <a href="./vehicles.html" style="font-weight: bold;" class="d" lang="en">Vehicles</a>
+            <a href="./about.html" style="font-weight: bold;" class="d" lang="en">Team</a>
+            <a href="./index.html" style="font-weight: bold;" class="d" lang="en">Home</a>
             <a href="javascript:void(0)" onclick="openNav()" class="open-m">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
-
     </div>
-    <!--Set to current page but different lang-->
-    <div class="lang">
-        <a href="./en/home.html"><img src="./img/zh.png" width="17px"></a>
-    </div>
+    <button class="lang" onclick="toggleLang()"><img src="./img/zh.png" width="17px" lang="zh"><img src="./img/en.png" width="17px" lang="en"></button>
 </header>
 
 <body>
@@ -65,45 +65,69 @@
         <a href="javascript:void(0)" onclick="closeNav()" class="close-m">
             <i class="fa-solid fa-xmark"></i>
         </a>
-        <a href="./zh/home.html" style="font-weight: bold;">首頁</a>
-        <a href="./zh/about.html" style="font-weight: bold;">團隊</a>
-        <a href="./zh/vehicles.html" style="font-weight: bold;">車輛</a>
-        <a href="./zh/sponsors.html" style="font-weight: bold;">贊助</a>
-        <a href="./zh/contact.html" style="font-weight: bold;">聯絡我們</a>
+        <a href="./index.html" style="font-weight: bold;" lang="zh">首頁</a>
+        <a href="./about.html" style="font-weight: bold;" lang="zh">團隊</a>
+        <a href="./vehicles.html" style="font-weight: bold;" lang="zh">車輛</a>
+        <a href="./sponsors.html" style="font-weight: bold;" lang="zh">贊助</a>
+        <a href="./contact.html" style="font-weight: bold;" lang="zh">聯絡我們</a>
+        <a href="./index.html" style="font-weight: bold;" lang="en">Home</a>
+        <a href="./about.html" style="font-weight: bold;" lang="en">Team</a>
+        <a href="./vehicles.html" style="font-weight: bold;" lang="en">Vehicles</a>
+        <a href="./sponsors.html" style="font-weight: bold;" lang="en">Sponsor</a>
+        <a href="./contact.html" style="font-weight: bold;" lang="en">Contact Us</a>
     </div>
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     <img class="cover" id="home_cover" src="./img/cover_0.jpg">
     <div class="t_box">
-        <h1>成功大學方程式賽車隊</h1>
-        <span style="font-size:18px;">
-        <hr style="padding:5px;">
-        <p>一群來自不同領域的學生，因為同樣對賽車懷抱熱情，秉持各工藝上的堅持，建築起屬於我們的賽車夢想。</p>
-        <hr style="padding:5px;">
-        <p>團隊將每年前往日本參加全球最大的工程賽事，Formula SAE學生方程式競賽。</p>
-        <p>此競賽橫跨工程、設計、專案管理、商業等各專業知識和資源，成員需要溝通討論並在有限時間內完成比賽。</p>
-        <hr style="padding:5px;">
-        <p>我們相信這個團隊不僅可以精進參賽學生的技術，更可以給學生拓展視野的機會。</p>
-        </span>
+        <div lang="zh">
+            <h1>成功大學方程式賽車隊</h1>
+            <span style="font-size:18px;">
+            <hr style="padding:5px;">
+            <p>一群來自不同領域的學生，因為同樣對賽車懷抱熱情，秉持各自工藝上的堅持，建築起屬於我們的賽車夢想。</p>
+            <hr style="padding:5px;">
+            <p>團隊將每年前往日本參加全球最大的工程賽事，Formula SAE學生方程式競賽。</p>
+            <p>此競賽橫跨工程、設計、專案管理、商業等各專業知識和資源，成員需要溝通討論並在有限時間內完成比賽。</p>
+            <hr style="padding:5px;">
+            <p>我們相信這個團隊不僅可以精進參賽學生的技術，更可以給學生拓展視野的機會。</p>
+            </span>
+        </div>
+        <div lang="en">
+            <h1>NCKU Formula Racing</h1>
+            <span style="font-size:18px;">
+            <hr style="padding:5px;">
+            <p>一群來自不同領域的學生，因為同樣對賽車懷抱熱情，秉持各工藝上的堅持，建築起屬於我們的賽車夢想。</p>
+            <hr style="padding:5px;">
+            <p>團隊將每年前往日本參加全球最大的工程賽事，Formula SAE學生方程式競賽。</p>
+            <p>此競賽橫跨工程、設計、專案管理、商業等各專業知識和資源，成員需要溝通討論並在有限時間內完成比賽。</p>
+            <hr style="padding:5px;">
+            <p>我們相信這個團隊不僅可以精進參賽學生的技術，更可以給學生拓展視野的機會。</p>
+            </span>
+        </div>
     </div>
     <div class="grid">
         <div class="g_logo"></div>
         <div class="g_blank"></div>
-        <div class="g_vehicles" onclick="redir('./zh/vehicles.html','_parent')" style="cursor: pointer;">
-            <h1>賽車</h1>
+        <div class="g_vehicles" onclick="redir('./vehicles.html','_parent')" style="cursor: pointer;">
+            <h1 lang="zh">賽車</h1>
+            <h1 lang="en">Vehicles</h1>
         </div>
-        <div class="g_history" onclick="redir('./zh/about.html#history','_parent')" style="cursor: pointer;">
-            <h1>歷史</h1>
+        <div class="g_history" onclick="redir('./about.html#history','_parent')" style="cursor: pointer;">
+            <h1 lang="zh">歷史</h1>
+            <h1 lang="en">History</h1>
         </div>
-        <div class="g_join" onclick="redir('./zh/join.html','_parent')" style="cursor: pointer;">
-            <h1>加入<br>我們</h1>
+        <div class="g_join" onclick="redir('./join.html','_parent')" style="cursor: pointer;">
+            <h1 lang="zh">加入<br>我們</h1>
+            <h1 lang="en">Join<br>Us</h1>
         </div>
-        <div class="g_team" onclick="redir('./zh/about.html','_parent')" style="cursor: pointer;">
-            <h1>成員</h1>
+        <div class="g_team" onclick="redir('./about.html','_parent')" style="cursor: pointer;">
+            <h1 lang="zh">成員</h1>
+            <h1 lang="en">Members</h1>
         </div>
-        <div class="g_sponsor" onclick="redir('./zh/sponsors.html','_parent')" style="cursor: pointer;">
-            <h1>贊助</h1>
+        <div class="g_sponsor" onclick="redir('./sponsors.html','_parent')" style="cursor: pointer;">
+            <h1 lang="zh">贊助</h1>
+            <h1 lang="en">Sponsor</h1>
         </div>
-        <div class="g_fsae" onclick="redir('./zh/fsae.html','_parent')" style="cursor: pointer;">
+        <div class="g_fsae" onclick="redir('./fsae.html','_parent')" style="cursor: pointer;">
             <h1>FSAE</h1>
         </div>
         <div class="g_ncku" id="animation" onclick="redir('https://www.ncku.edu.tw/','_blank')" style="cursor: pointer;"></div>

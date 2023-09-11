@@ -64,9 +64,8 @@ function toggleTable() {
 
 // version
 
-
-var version = "v5.1"; //小版本放小數點後一位 大版本(屆數)為個位數
-var date = "2023/3/13"; //Official release date: TBC
+var version = "v5.3"; //小版本放小數點後一位 大版本(屆數)為個位數
+var date = "2023/9/8"; //Official release date: TBC
 
 function ver() {
     document.getElementById("version").innerHTML = version;
@@ -79,6 +78,34 @@ console.log("NCKU Formula Racing Website | " + version + ", " + date)
 function redir(link, tgt) {
     window.open(link, tgt); //tgt: _parent, _blank
 }
+
+// language
+$('[lang="zh"]').show()
+$('[lang="en"]').hide()
+    /* temporarily disabled
+    let lang = sessionStorage.getItem('lang');
+    if (typeof lang === "null" || lang == 0) {
+        $('[lang="zh"]').show()
+        $('[lang="en"]').hide()
+    } else {
+        $('[lang="en"]').show()
+        $('[lang="zh"]').hide()
+    }
+
+    function toggleLang() {
+        let lang = sessionStorage.getItem('lang');
+        if (typeof lang === "undefined" || lang == 0) {
+
+            $('[lang="zh"]').show()
+            $('[lang="en"]').hide()
+            sessionStorage.setItem('lang', 0)
+        } else {
+            $('[lang="en"]').show()
+            $('[lang="zh"]').hide()
+            sessionStorage.setItem('lang', 1)
+        }
+    }*/
+
 
 // home page cover
 /*
