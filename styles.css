@@ -1001,11 +1001,11 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    .sponsors>img {
+    .sponsors>a>img {
         padding: 10px;
         height: 45px;
     }
-    .sponsors>.enlarge {
+    .sponsors>a>.enlarge {
         padding: 10px;
         height: 60px;
     }
