@@ -27,12 +27,7 @@ Use `<hr style="padding:px;">`
 Cover photo -> Title & Short intro -> Grid navigation -> Gallery -> Sponsors
 # About:  
 ### Abbrivations of members:  
--leader 隊長  
--td 總工(technical director)  
--bd 車體組組長(bodywork director)  
--cd 底盤組組長(chassis director)  
--ed 電力組組長(electric director)  
--md 商業組組長(marketing director)
+temp
 ### History:
 Text+Image, image need to have logo on it.  
 # Vehicles:
