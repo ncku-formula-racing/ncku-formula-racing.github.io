@@ -85,7 +85,7 @@ function toggleCont() {
 // version
 
 var version = "v5.3"; //小版本放小數點後一位 大版本(屆數)為個位數
-var date = "2023/9/8"; //Official release date: TBC
+var date = "2024/3/26"; //Official release date: TBC
 
 function ver() {
     document.getElementById("version").innerHTML = version;
@@ -100,31 +100,31 @@ function redir(link, tgt) {
 }
 
 // language
-$('[lang="zh"]').show()
-$('[lang="en"]').hide()
-    /* temporarily disabled
+$('[lang="zh"]').show();
+$('[lang="en"]').hide();
+/* temporarily disabled
+let lang = sessionStorage.getItem('lang');
+if (typeof lang === "null" || lang == 0) {
+    $('[lang="zh"]').show()
+    $('[lang="en"]').hide()
+} else {
+    $('[lang="en"]').show()
+    $('[lang="zh"]').hide()
+}
+
+function toggleLang() {
     let lang = sessionStorage.getItem('lang');
-    if (typeof lang === "null" || lang == 0) {
+    if (typeof lang === "undefined" || lang == 0) {
+
         $('[lang="zh"]').show()
         $('[lang="en"]').hide()
+        sessionStorage.setItem('lang', 0)
     } else {
         $('[lang="en"]').show()
         $('[lang="zh"]').hide()
+        sessionStorage.setItem('lang', 1)
     }
-
-    function toggleLang() {
-        let lang = sessionStorage.getItem('lang');
-        if (typeof lang === "undefined" || lang == 0) {
-
-            $('[lang="zh"]').show()
-            $('[lang="en"]').hide()
-            sessionStorage.setItem('lang', 0)
-        } else {
-            $('[lang="en"]').show()
-            $('[lang="zh"]').hide()
-            sessionStorage.setItem('lang', 1)
-        }
-    }*/
+}*/
 
 
 // home page cover
@@ -144,3 +144,34 @@ function cover() {
 }
 
 setInterval(cover, 5000); */
+
+// loading animation
+(function(loader) {
+
+    window.addEventListener('beforeunload', function(e) {
+        activateLoader();
+    });
+
+    window.addEventListener('load', function(e) {
+        deactivateLoader();
+    });
+
+    function activateLoader() {
+        loader.style.display = 'block';
+        loader.style.opacity = 1;
+    }
+
+    function deactivateLoader() {
+        setTimeout(function() {
+            deactivate();
+        }, 1000);
+
+        function deactivate() {
+            loader.style.opacity = 0;
+            loader.addEventListener('transitionend', function() {
+                loader.style.display = 'none';
+            }, false);
+        }
+    }
+
+})(document.querySelector('.o-page-loader'));
