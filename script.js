@@ -100,8 +100,7 @@ function redir(link, tgt) {
 }
 
 // language
-$('[lang="zh"]').show();
-$('[lang="en"]').hide();
+
 /* temporarily disabled
 let lang = sessionStorage.getItem('lang');
 if (typeof lang === "null" || lang == 0) {
@@ -150,7 +149,7 @@ setInterval(cover, 5000); */
 
     window.addEventListener('beforeunload', function(e) {
         activateLoader();
-    });
+    })
 
     window.addEventListener('load', function(e) {
         deactivateLoader();
@@ -159,6 +158,7 @@ setInterval(cover, 5000); */
     function activateLoader() {
         loader.style.display = 'block';
         loader.style.opacity = 1;
+        setTimeout(function() { deactivateLoader(); }, 7500);
     }
 
     function deactivateLoader() {
@@ -175,3 +175,6 @@ setInterval(cover, 5000); */
     }
 
 })(document.querySelector('.o-page-loader'));
+
+$('[lang="zh"]').show();
+$('[lang="en"]').hide();
