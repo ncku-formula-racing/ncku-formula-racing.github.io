@@ -146,6 +146,7 @@ function cover() {
 setInterval(cover, 5000); */
 
 // loading animation
+/*
 setTimeout(function() { deactivateLoader(); }, 2500);
 (function(loader) {
 
@@ -176,4 +177,4 @@ setTimeout(function() { deactivateLoader(); }, 2500);
         }
     }
 
-})(document.querySelector('.o-page-loader'));
+})(document.querySelector('.o-page-loader'));*/
