@@ -1,13 +1,1 @@
-.DS_Store
-fonts/.DS_Store
-img/.DS_Store
-logo/.DS_Store
-en/.DS_Store
-zh/.DS_Store
-img/pioneer01/.DS_Store
-img/ck02/.DS_Store
-img/ck03/.DS_Store
-img/ck3_5/.DS_Store
-img/sponsors/.DS_Store
-img/sponsors/.DS_Store
-img/sponsors/.DS_Store
+*.DS_Store
