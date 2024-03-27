@@ -1283,7 +1283,8 @@ hr {
 /* loading animation */
 
 .o-page-loader {
-    display: block;
+    /*display: block;*/
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
