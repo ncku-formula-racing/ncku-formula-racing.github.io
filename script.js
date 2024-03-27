@@ -158,7 +158,7 @@ setInterval(cover, 5000); */
     function activateLoader() {
         loader.style.display = 'block';
         loader.style.opacity = 1;
-        setTimeout(function() { deactivateLoader(); }, 7500);
+        setTimeout(function() { deactivateLoader(); }, 2500);
     }
 
     function deactivateLoader() {
