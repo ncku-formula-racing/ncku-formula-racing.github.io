@@ -100,7 +100,8 @@ function redir(link, tgt) {
 }
 
 // language
-
+$('[lang="zh"]').show();
+$('[lang="en"]').hide();
 /* temporarily disabled
 let lang = sessionStorage.getItem('lang');
 if (typeof lang === "null" || lang == 0) {
@@ -145,6 +146,7 @@ function cover() {
 setInterval(cover, 5000); */
 
 // loading animation
+setTimeout(function() { deactivateLoader(); }, 2500);
 (function(loader) {
 
     window.addEventListener('beforeunload', function(e) {
@@ -175,6 +177,3 @@ setInterval(cover, 5000); */
     }
 
 })(document.querySelector('.o-page-loader'));
-
-$('[lang="zh"]').show();
-$('[lang="en"]').hide();
