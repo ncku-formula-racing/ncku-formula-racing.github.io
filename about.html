@@ -68,48 +68,48 @@
                 <h2>賴冠廷</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/viceleader.png">
                 <h3>副隊長</h3>
                 <h2>張傑舜</h2>
             </div>
             <hr>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img id="ktr" src="./img/members/bd1.png" onclick="easter1(1)">
                 <h3>車體組 組長</h3>
                 <h2>高廷榕</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/cd1.png">
                 <h3>底盤組 組長</h3>
                 <h2>吳宇森</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img id="lwk" src="./img/members/cd2.png" onclick="easter1(2)">
                 <h3>底盤組 組長</h3>
                 <h2>羅偉根</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/cd3.png">
                 <h3>底盤組 組長</h3>
                 <h2>王德康</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/fd.png">
                 <h3>車架組 組長</h3>
                 <h2>何俊樑</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/ed1.png">
                 <h3>電力組 組長</h3>
                 <h2>劉威霆</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/ed2.png">
                 <h3>電力組 組長</h3>
                 <h2>呂紹榮</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/ed3.png">
                 <h3>電力組 組長</h3>
                 <h2>劉艾琳</h2>
             </div>
@@ -493,6 +493,29 @@
         </script> NCKU Formula Racing. All Rights Reserved.</p>
 </footer>
 <script>
+    var wk = 0;
+    var tr = 0
+
+    function easter1(i) {
+        if (i === 1) {
+            if (tr === 0) {
+                document.getElementById("ktr").src = "./img/members/bd1-1.png";
+                tr = 1;
+            } else {
+                document.getElementById("ktr").src = "./img/members/bd1.png";
+                tr = 0;
+            }
+        } else if (i === 2) {
+            if (wk === 0) {
+                document.getElementById("lwk").src = "./img/members/cd2-1.png";
+                wk = 1;
+            } else {
+                document.getElementById("lwk").src = "./img/members/cd2.png";
+                wk = 0;
+            }
+
+        }
+    }
 </script>
 
 </html>
