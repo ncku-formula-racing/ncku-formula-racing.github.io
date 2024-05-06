@@ -84,8 +84,8 @@ function toggleCont() {
 
 // version
 
-var version = "v5.3"; //小版本放小數點後一位 大版本(屆數)為個位數
-var date = "2024/3/26"; //Official release date: TBC
+var version = "v2.1"; //random lol, maybe cancel this in the future 
+var date = "2024/5/6"; //Official release date: idk, maybe change this to lastest updated date
 
 function ver() {
     document.getElementById("version").innerHTML = version;
@@ -100,31 +100,41 @@ function redir(link, tgt) {
 }
 
 // language
-$('[lang="zh"]').show();
-$('[lang="en"]').hide();
-/* temporarily disabled
-let lang = sessionStorage.getItem('lang');
-if (typeof lang === "null" || lang == 0) {
-    $('[lang="zh"]').show()
-    $('[lang="en"]').hide()
-} else {
-    $('[lang="en"]').show()
-    $('[lang="zh"]').hide()
+function check_lang() {
+    var lang = window.localStorage.getItem("lang");
+    if (lang != "zh" && lang != "en") {
+        window.localStorage.setItem("lang", "zh"); //default lang:zh
+    }
+    load_lang();
 }
 
-function toggleLang() {
-    let lang = sessionStorage.getItem('lang');
-    if (typeof lang === "undefined" || lang == 0) {
-
-        $('[lang="zh"]').show()
-        $('[lang="en"]').hide()
-        sessionStorage.setItem('lang', 0)
-    } else {
-        $('[lang="en"]').show()
-        $('[lang="zh"]').hide()
-        sessionStorage.setItem('lang', 1)
+function lang_change() {
+    var lang = window.localStorage.getItem("lang");
+    if (lang == "zh") {
+        window.localStorage.setItem("lang", "en");
+        document.getElementById("lang_icn").src = "./img/en.png";
+        load_lang()
+    } else if (lang == "en") {
+        window.localStorage.setItem("lang", "zh");
+        document.getElementById("lang_icn").src = "./img/zh.png";
+        load_lang()
     }
-}*/
+}
+
+function load_lang() {
+    var lang = window.localStorage.getItem("lang");
+    if (lang == "zh") {
+        //$('[lang="zh"]').show();
+        //$('[lang="en"]').hide();
+        document.getElementById("lang_icn").src = "./img/zh.png";
+    } else if (lang == "en") {
+        //$('[lang="zh"]').hide();
+        //$('[lang="en"]').show();
+        document.getElementById("lang_icn").src = "./img/en.png";
+    }
+}
+$('[lang="zh"]').show();
+$('[lang="en"]').hide();
 
 
 // home page cover

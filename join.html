@@ -33,11 +33,11 @@
     </div>
     <!--Set to current page but different lang-->
     <div class="lang">
-        <a href="./en/join.html"><img src="./img/zh.png" width="17px"></a>
+        <a onclick="lang_change()"><img id="lang_icn" src="./img/lang_blank.png" width="17px"></a>
     </div>
 </header>
 
-<body>
+<body onload="check_lang()">
     <div class="o-page-loader">
         <div class="o-page-loader--content">
             <div class="o-page-loader--spinner"></div>

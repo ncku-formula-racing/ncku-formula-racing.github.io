@@ -18,7 +18,7 @@
 </head>
 <header>
     <div class="menu">
-        <a href="index.htmll"><img class="logo " src="./logo/logo_w.png"></a>
+        <a href="index.html"><img class="logo " src="./logo/logo_w.png"></a>
         <div class="menu-r">
             <!--Order is reversed-->
             <a href="contact.html" style="font-weight: bold;" class="d">聯絡我們</a>
@@ -34,11 +34,11 @@
     </div>
     <!--Set to current page but different lang-->
     <div class="lang">
-        <a href="./en/.html"><img src="./img/zh.png" width="17px"></a>
+        <a onclick="lang_change()"><img id="lang_icn" src="./img/lang_blank.png" width="17px"></a>
     </div>
 </header>
 
-<body>
+<body onload="check_lang()">
     <div class="o-page-loader">
         <div class="o-page-loader--content">
             <div class="o-page-loader--spinner"></div>
@@ -61,6 +61,28 @@
     <div class="t_box">
         <h1>成大方程式賽車隊</h1>
         <p>asdasdasd</p>
+
+        <p>Person Name is:</p>
+        <p id="demo"></p>
+        <button onclick="alter_loc()">AAA</button>
+        <script>
+            //localStorage.setItem("lastname", "Smith");
+            let personName = localStorage.getItem("lastname");
+            document.getElementById("demo").innerHTML = personName;
+            var i = 0;
+
+            function alter_loc() {
+                if (i == 0) {
+                    i++;
+                    localStorage.setItem("lastname", i);
+                } else {
+                    i = 0;
+                    localStorage.setItem("lastname", i);
+                }
+                document.getElementById("demo").innerHTML = i;
+            }
+        </script>
+
     </div>
 
 </body>
