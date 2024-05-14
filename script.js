@@ -1,3 +1,6 @@
+// disabling right click
+//document.addEventListener('contextmenu', event => event.preventDefault());
+
 // topBtn 
 let mybutton = document.getElementById("topBtn");
 
@@ -84,14 +87,19 @@ function toggleCont() {
 
 // version
 
-var version = "v2.1"; //random lol, maybe cancel this in the future 
-var date = "2024/5/6"; //Official release date: idk, maybe change this to lastest updated date
+var version = "v2024.5"; //random lol, maybe cancel this in the future
+//nvm i changed my mind, now its v[year].[month]
+//var date = "2024/5/6"; //Official release date: idk, maybe change this to lastest updated date
+var date = "";
 
-function ver() {
+async function ver() {
+    await fetch('https://api.github.com/repos/ncku-formula-racing/ncku-formula-racing.github.io/commits')
+        .then((response) => response.json())
+        .then((json) => date = json[0].commit.committer.date);
+
     document.getElementById("version").innerHTML = version;
     document.getElementById("v_date").innerHTML = date;
 }
-console.log("NCKU Formula Racing Website | " + version + ", " + date)
 
 // home page grid redirect
 //<div> disappears after wrapping it in <a>
@@ -188,3 +196,35 @@ setTimeout(function() { deactivateLoader(); }, 2500);
     }
 
 })(document.querySelector('.o-page-loader'));*/
+
+// easter egg
+var egg = 0;
+
+function easter() {
+    if (egg < 7) {
+        egg++;
+        if (egg == 3) {
+            document.getElementById("v_date").classList.add("obfuscated")
+        }
+    } else if (egg == 7) {
+        console.log('activate')
+        window.location.href = './shark1223.html';
+    }
+}
+
+// obfuscated
+setInterval(function() {
+    $('.obfuscated').text(randomizer($('.obfuscated').text()));
+
+}, 50);
+
+function randomizer(rawr) {
+    var length = rawr.length;
+    var text = '';
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < length; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
