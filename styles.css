@@ -1012,6 +1012,30 @@ hr {
 }
 
 
+/* competition */
+
+.comp_res {
+    padding: 15px;
+    border-collapse: collapse;
+    width: 450px;
+    vertical-align: top;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comp_res td,
+.comp_res th {
+    padding: 5px;
+    border-bottom: 1px solid #312d33
+}
+
+.comp_res th {
+    background-color: #a31f34;
+    color: #ffffff;
+}
+
+
 /* sponsor */
 
 .sponsors {
@@ -1187,6 +1211,9 @@ hr {
     background-color: #a31f34;
     color: #ffffff;
 }
+
+
+/* gallery */
 
 
 /* iframe */
