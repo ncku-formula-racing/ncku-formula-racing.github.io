@@ -64,7 +64,7 @@
         <div class="sector">
             <h2>第七屆成員</h2>
             <div class="member">
-                <img src="./img/members/ed1.png">
+                <img src="./img/members/leader.png">
                 <h3>隊長</h3>
                 <h2>劉威霆</h2>
             </div>
@@ -75,7 +75,7 @@
             </div>
             <hr>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img id="ctw" src="./img/members/ce.png" onclick="easter1(3)">
                 <h3>總工程師</h3>
                 <h2>張庭瑋</h2>
             </div>
@@ -101,7 +101,7 @@
                 <h2>鄭培鈞</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/md1.png">
                 <h3>商業組 組長</h3>
                 <h2>呂宜蓁</h2>
             </div>
@@ -493,6 +493,7 @@
 <script>
     var wk = 0;
     var tr = 0
+    var tw = 0;
 
     function easter1(i) {
         if (i === 1) {
@@ -512,6 +513,14 @@
                 wk = 0;
             }
 
+        } else if (i === 3) {
+            if (tw === 0) {
+                document.getElementById("ctw").src = "./img/members/ce-1.png";
+                tw = 1;
+            } else {
+                document.getElementById("ctw").src = "./img/members/ce.png";
+                tw = 0;
+            }
         }
     }
 </script>
