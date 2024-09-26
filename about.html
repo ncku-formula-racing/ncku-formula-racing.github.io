@@ -69,7 +69,7 @@
                 <h2>劉威霆</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/md2.png">
                 <h3>副隊長</h3>
                 <h2>楊欣語</h2>
             </div>
@@ -86,17 +86,17 @@
                 <h2>吳宇森</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img id="ccs" src="./img/members/cd2.png" onclick="easter1(4)">
                 <h3>底盤組 組長</h3>
                 <h2>周祺勳</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/ed1.png">
                 <h3>電力組 組長</h3>
                 <h2>林祐平</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/ed2.png">
                 <h3>電力組 組長</h3>
                 <h2>鄭培鈞</h2>
             </div>
@@ -106,7 +106,7 @@
                 <h2>呂宜蓁</h2>
             </div>
             <div class="member">
-                <img src="./img/temp2.png">
+                <img src="./img/members/md2.png">
                 <h3>商業組 組長</h3>
                 <h2>楊欣語</h2>
             </div>
@@ -492,8 +492,9 @@
 </footer>
 <script>
     var wk = 0;
-    var tr = 0
+    var tr = 0;
     var tw = 0;
+    var cs = 0;
 
     function easter1(i) {
         if (i === 1) {
@@ -520,6 +521,14 @@
             } else {
                 document.getElementById("ctw").src = "./img/members/ce.png";
                 tw = 0;
+            }
+        } else if (i === 4) {
+            if (cs === 0) {
+                document.getElementById("ccs").src = "./img/members/cd2-1.png";
+                cs = 1;
+            } else {
+                document.getElementById("ccs").src = "./img/members/cd2.png";
+                cs = 0;
             }
         }
     }
