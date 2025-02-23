@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<!--
+
+           ▒▄,
+     ▀▓▄,   ▀▓▓▓▒▄,                                    ¬╖,
+      ╙▓▓▓▓▓▒▄▄▄▄,`╙^^        ,,,╓╓╓╖╖╖╓╓,,,,             ▀▓▓▄▄,
+        ▀▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀▀▀▀^`^`       `└"^"¬─-    ▓▓▓▓▓▓▓▒╖
+         ▀▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀▀`                           ╓▄▓▓▓▓▓▓▓▓▓▓▓▓▒╖
+          ╙▓▓▓▓▓▓▓▓▓▓▓▀╙                ╙▀█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄,
+            ▀▓▓▓▓▓▓▀`                         `╙▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀╙^^^"▀▀▀▀▀▓▓▓▓▄,
+             ▀▓▓▓▀                                                           `▀▀▄
+              ╙▀                                                                  `
+    
+
+███╗░░██╗░█████╗░██╗░░██╗██╗░░░██╗  ███████╗░█████╗░██████╗░███╗░░░███╗██╗░░░██╗██╗░░░░░░█████╗░    ██████╗░░█████╗░░█████╗░██╗███╗░░██╗░██████╗░
+████╗░██║██╔══██╗██║░██╔╝██║░░░██║  ██╔════╝██╔══██╗██╔══██╗████╗░████║██║░░░██║██║░░░░░██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██║████╗░██║██╔════╝░
+██╔██╗██║██║░░╚═╝█████═╝░██║░░░██║  █████╗░░██║░░██║██████╔╝██╔████╔██║██║░░░██║██║░░░░░███████║    ██████╔╝███████║██║░░╚═╝██║██╔██╗██║██║░░██╗░
+██║╚████║██║░░██╗██╔═██╗░██║░░░██║  ██╔══╝░░██║░░██║██╔══██╗██║╚██╔╝██║██║░░░██║██║░░░░░██╔══██║    ██╔══██╗██╔══██║██║░░██╗██║██║╚████║██║░░╚██╗
+██║░╚███║╚█████╔╝██║░╚██╗╚██████╔╝  ██║░░░░░╚█████╔╝██║░░██║██║░╚═╝░██║╚██████╔╝███████╗██║░░██║    ██║░░██║██║░░██║╚█████╔╝██║██║░╚███║╚██████╔╝
+╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝░╚═════╝░  ╚═╝░░░░░░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝    ╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝╚═╝░░╚══╝░╚═════╝░
+
+-->
+
+<head>
+    <title>成大方程式賽車隊</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="NCKU, FSAE, Forumla, Racing, Formula Racing, 成大方程式賽車隊, 成大, 成功大學, 成功大學方程式賽車隊, 方程式賽車隊" />
+    <meta name="author" content="成大方程式賽車隊" />
+    <meta name="description" content="成大方程式賽車隊" />
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/ce85bf40c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./script.js" defer></script>
+</head>
+
+<header>
+    <img src="./img/grid_logo.png" alt="Logo" class="header-logo">
+</header>
+<br>
+<br>
+
+<body onload="check_lang()">
+    <div class="o-page-loader">
+        <div class="o-page-loader--content">
+            <div class="o-page-loader--spinner"></div>
+            <div class="o-page-loader--message">
+                <span>Loading...</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid">
+        <div class="g_join" onclick="redir('https://docs.google.com/forms/d/e/1FAIpQLSf9xFe4mU9_DHN1qZZMsq5Ty43LIgVTsvQOV2FnIgKsCDOyiw/viewform?usp=sharing','_parent')">
+            <div class="image-container">
+                <img src="./img/vehicles.jpg" class="image" alt="Vehicles for registration">
+                <div class="overlay">
+                    <h1 lang="zh">報名<br>連結</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="g_groupintro" onclick="redir('https://drive.google.com/file/d/19Gm665YWoVM1-03KQX1lU9wtC_aKhLPZ/view?usp=sharing','_parent')">
+            <div class="image-container">
+                <img src="./img/team.JPG" class="image" alt="Group introduction on Instagram">
+                <div class="overlay">
+                    <h1 lang="zh">各組<br>介紹</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_interview" onclick="redir('https://hackmd.io/@nckufs/113-2-interview','_parent')">
+            <div class="image-container">
+                <img src="./img/fsae.jpg" class="image">
+                <div class="overlay">
+                    <h1 lang="zh">面試<br>題目</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_fb" onclick="redir('https://www.facebook.com/nckuformularacing/','_parent')">
+            <div class="image-container">
+                <img src="./img/fsae1.jpg" class="image">
+                <div class="overlay">
+                    <h1 lang="zh">FB</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_ig" onclick="redir('https://www.instagram.com/nckuformularacing/','_parent')">
+            <div class="image-container">
+                <img src="./img/history.jpg" class="image">
+                <div class="overlay">
+                    <h1 lang="zh">IG</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_web" onclick="redir('https://ncku-formula-racing.github.io/index.html','_parent')">
+            <div class="image-container">
+                <img src="./img/FST.jpg" class="image">
+                <div class="overlay">
+                    <h1 lang="zh">官網</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="t_box">
+        <span lang="zh">
+            <h4>網站設計管理員<h4>
+            <p>商業組組長 呂宜蓁</p>
+        </span>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector(".o-page-loader").style.display = "none";
+    });
+    function redir(url, target) {
+        window.open(url, target);
+    }
+</script>
+
+</html>
