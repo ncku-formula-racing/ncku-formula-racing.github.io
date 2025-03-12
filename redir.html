@@ -118,7 +118,6 @@
         }
         
         .t_box {
-            width: 80%;
             height: 100%;
         }
         /* icons */
@@ -135,7 +134,25 @@
         
         .t_box {
             margin: auto;
-            padding: 50px;
+            padding-top: 50px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .t_box {
+                width: 100%;
+            }
+            .slot {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 601px) {
+            .t_box {
+                width: 80%;
+            }
+            .slot {
+                width: 480px;
+            }
         }
         
         .slot {
