@@ -157,6 +157,9 @@
                 font-size: 1.125rem;
                 line-height: 80px;
             }
+            .svg_logo {
+                width: 64px;
+            }
         }
         
         @media only screen and (min-width: 601px) {
@@ -178,6 +181,9 @@
             .slot_text>h2 {
                 line-height: 100px;
             }
+            .svg_logo {
+                width: 80px;
+            }
         }
         
         .slot {
@@ -196,6 +202,16 @@
         .fab,
         .fa-solid {
             color: #312d33;
+        }
+        
+        .svg_logo {
+            position: relative;
+            display: inline-block;
+            top: 40%;
+            background: url(logo/logo_no_text.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100px;
         }
         
         .slot_text>h2 {
@@ -218,13 +234,22 @@
     <div class="t_box">
         <div class="slot" onclick="redir('https://ncku-formula-racing.github.io/','_parent')">
             <div class="slot_icn">
-                <i class="fa-solid fa-link"></i>
+                <div class="svg_logo"></div>
             </div>
             <div class="slot_text">
                 <h2>Our Website</h2>
             </div>
         </div>
         <hr style="padding:5px;">
+        <!--div class="slot" onclick="redir('LINK HERE','_parent')">
+            <div class="slot_icn">
+                <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="slot_text">
+                <h2>TEXT HERE</h2>
+            </div>
+        </div>
+        <hr style="padding:5px;"-->
         <div class="slot" onclick="redir('https://www.facebook.com/nckuformularacing/','_parent')">
             <div class="slot_icn">
                 <i class='fab fa-facebook'></i>
