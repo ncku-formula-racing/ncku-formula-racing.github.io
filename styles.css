@@ -48,6 +48,11 @@ p {
     color: #312d33;
 }
 
+p>a {
+    color: #312d33;
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
 }
