@@ -57,9 +57,91 @@
     </div>
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     <div class="t_box">
-        <h1 class="cont">CIS</h1>
-        <div class="sector">
-            <h2>Logo Usage</h2>
+        <h1 class="cont">CIS Regulations</h1>
+        <hr style="padding:5px;">
+        <p>Company Identity System(CIS) 是一種用來形塑公司/團隊形象的工具，透過一系列的色彩、設計、字體等，以塑造並保持團隊形象。<br>一個成功的CIS可以讓我們在眾多車隊中突顯出來，或是會有強烈的連結，例如Rennteam Stuttgart的綠色、Elbflorace的橘色，都可以讓人一看到就想到這支隊伍。<br>而CIS通常還會包含理念等，但這頁目前只會講述視覺的部分。</p>
+        <hr style="padding:5px;">
+        <div class="sector" id="logo">
+            <h2>Logo 使用規範</h2>
+            <h3 style="color:#312d33">使用原則</h3>
+            <p>1. 嚴禁擅自變更 Logo 顏色(包含字)。<br>2. 嚴禁更改 Logo 比例。<br>3. 以有字版本為主，若太小才使用無字版本。<br>4. 用點 Common Sense，別人 logo 不能做的事我們的當然也不能。</p>
+            <hr style="padding:5px;">
+            <h3 style="color:#312d33">Logo 共三種配色</h3>
+            <div class="logo-block" style="background-color:#312d33"><img src="./logo/logo_db.png"></div>
+            <div class="logo-block" style="background-color:#a31f34"><img src="./logo/logo_w.png"></div>
+            <div class="logo-block" style="background-color:#ffffff;border:0.5px solid #312d33;"><img src="./logo/logo_lb.png"></div>
+        </div>
+        <hr style="padding:15px;">
+        <div class="sector" id="color">
+            <h2>色彩</h2>
+            <h3 style="color:#312d33">主色彩</h3>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#a31f34"></div>
+                <p>Hex #A31F34</p>
+                <p>RGB(162,51,32)</p>
+                <p>CMYK(30,100,100,0)</p>
+                <p>PMS 201C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#312d33"></div>
+                <p>Hex #312D33</p>
+                <p>RGB(49,45,51)</p>
+                <p>CMYK(72,67,53,65)</p>
+                <p>PMS 433C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#ffffff;border:0.5px solid #312d33;"></div>
+                <p>Hex #FFFFFF</p>
+                <p>RGB(255,255,255)</p>
+                <p>CMYK(0,0,0,0)</p>
+                <p class="noshow">hidden text :P</p>
+            </div>
+            <h3 style="color:#312d33">副色彩</h3>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#8c6e4a"></div>
+                <p>Hex #8C6E4A</p>
+                <p>RGB(162,51,32)</p>
+                <p>CMYK(30,100,100,0)</p>
+                <p>PMS 201C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#e4002b"></div>
+                <p>Hex #E4002B</p>
+                <p>RGB(228,0,43)</p>
+                <p>CMYK(0,100,89,0)</p>
+                <p>PMS 185C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#420a15"></div>
+                <p>Hex #420A15</p>
+                <p>RGB(66,10,21)</p>
+                <p>CMYK(5,100,50,74)</p>
+                <p>PMS 4102C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#555559"></div>
+                <p>Hex #555559</p>
+                <p>RGB(85,85,89)</p>
+                <p>CMYK(0,0,0,85)</p>
+                <p>PMS Cool Grey 11C</p>
+            </div>
+            <div class="color-list">
+                <div class="c-block" style="background-color:#a6a9ab"></div>
+                <p>Hex #A6A9AB</p>
+                <p>RGB(166,169,171)</p>
+                <p>CMYK(0,0,0,40)</p>
+                <p>PMS 877C</p>
+            </div>
+        </div>
+        <hr style="padding:15px;">
+        <div class="sector" id="font">
+            <h2>字體</h2>
+            <h3 style="color:#312d33">標題</h3>
+            <p>英文：<span class="cont">Conthrax</span>, Noto Sans<span style="color:#e4002b">*</span><br>中文：Noto Sans TC</p>
+            <p><span style="color:#e4002b">*</span>英文仍以<span class="cont">Conthrax</span>為主，但視情況可用Noto Sans</p>
+            <hr style="padding:5px;">
+            <h3 style="color:#312d33">內文</h3>
+            <p>英文：Noto Sans<br>中文：Noto Sans TC</p>
         </div>
     </div>
 
@@ -79,5 +161,31 @@
 </footer>
 <script>
 </script>
+<style>
+    .logo-block {
+        padding: 20px;
+        display: inline-block;
+    }
+    
+    .logo-block>img {
+        height: 64px;
+    }
+    
+    .color-list {
+        padding: 15px;
+        display: inline-block;
+        height: 250px;
+    }
+    
+    .noshow {
+        color: #ffffff;
+    }
+    
+    .c-block {
+        display: inline-block;
+        height: 50px;
+        width: 150px;
+    }
+</style>
 
 </html>
