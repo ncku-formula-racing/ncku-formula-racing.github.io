@@ -87,7 +87,7 @@ function toggleCont() {
 
 // version
 
-var version = "v2025.03"; //random lol, maybe cancel this in the future
+var version = "v2025.09"; //random lol, maybe cancel this in the future
 //nvm i changed my mind, now its v[year].[month]
 //var date = "2024/5/6"; //Official release date: idk, maybe change this to lastest updated date
 var date = "";

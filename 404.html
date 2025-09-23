@@ -4,30 +4,42 @@
     <title>404</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="refresh" content="3;https://ncku-formula-racing.github.io/" />
+    <!--meta http-equiv="refresh" content="5;https://ncku-formula-racing.github.io/" /-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="NCKU, FSAE, Forumla, Racing, Formula Racing, 成大方程式賽車隊, 成大, 成功大學, 成功大學方程式賽車隊, 方程式賽車隊" />
     <meta name="author" content="NCKU Formula Racing 成大方程式賽車隊" />
     <meta name="description" content="NCKU Formula Racing 成大方程式賽車隊" />
-    <link rel="icon" href="/img/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="script.js" defer></script>
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/ce85bf40c6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="center">
-        <h1><i class="fa-solid fa-triangle-exclamation fa-fade"></i> <span>Error </span><span style="font-size: 50px; color: #a31f34;">404</span></h1>
+        <h1 class="cont"><i class="fa-solid fa-triangle-exclamation fa-fade"></i> Error 404</h1>
+        <p>Redirecting you in <span id="cdtimer">5</span>...</p>
+        <img src="./img/hist13.jpg" id="burnt">
     </div>
 </body>
 
-<style>
-    .center {
-        height: 200px;
-        padding: 30%;
-        position: relative;
+<script>
+    setInterval(countdown, 1000)
+    cd = 4
+
+    function countdown() {
+        if (cd != 0) {
+            document.getElementById("cdtimer").innerHTML = cd;
+            cd--;
+        } else {
+            cd = 0;
+            document.getElementById("cdtimer").innerHTML = cd;
+            window.open(`https://ncku-formula-racing.github.io/`, '_parent')
+        }
+
     }
-    
+</script>
+<style>
     .center h1 {
         margin: 0;
         position: absolute;
@@ -40,7 +52,19 @@
     .center p {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 48%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    #burnt {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+        margin: 0;
+        position: absolute;
+        top: 60%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
