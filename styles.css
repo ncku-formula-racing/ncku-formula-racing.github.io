@@ -434,6 +434,14 @@ hr {
     opacity: 0.9;
 }
 
+.g_fsaej {
+    background-image: url(./img/fsaej.webp);
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    opacity: 0.9;
+}
+
 .g_ncku {
     background-image: url(./img/grid_ncku1.png);
     background-size: cover;
