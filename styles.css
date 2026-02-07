@@ -273,6 +273,30 @@ hr {
     padding: 0 5px;
 }
 
+.slider {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 100px auto;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 180px ;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.left {left: 5px;}
+.right {right: 5px;}
+
 
 /* home v1*/
 

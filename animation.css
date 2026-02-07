@@ -313,9 +313,9 @@ hr {
 }
 
 
-/* topBtn */
+/* tn */
 
-#topBtn {
+#tn {
     display: none;
     position: fixed;
     cursor: pointer;

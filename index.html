@@ -59,11 +59,11 @@
         </div>
     </div>
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <img class="cover" id="home_cover" src="./img/cover_2.jpg">
+    <img class="cover" id="home_cover" src="./img/cover_2_edit.jpg">
     <div class="t_box" style="padding-top:20px;">
         <span lang="zh">
             <h1 style="font-size:40px; font-style:italic;text-align:right;">成功大學方程式賽車隊</h1>
-            <h1 class="cont" style="text-align:right; font-size:20px; color:black;">NCKU FORMULA RACING</h1>
+            <h1 class="cont" style="text-align:right; font-size:20px; color:#312d33;">NCKU FORMULA RACING</h1>
             <span style="font-size:18px; text-align:left;">
             <hr style="padding:15px;">
             <p>一群來自不同領域的學生，因為同樣對賽車懷抱熱情，秉持各自的專業，共同建築起屬於我們的賽車夢。</p>
@@ -116,6 +116,41 @@
             <h1>FSAE</h1>
         </div>
         <div class="g_ncku" id="animation" onclick="redir('https://www.ncku.edu.tw/','_blank')" style="cursor: pointer;"></div>
+    </div>
+    <!--<div class="slider">
+        <button class="arrow left">&#10094;</button>
+        <img id="photo" scr="./img/ck3_5/3.jpg">
+        <button class="arrow right">&#10095;</button>
+    </div>
+    <script>
+    const images = [
+    "./img/ck05/8.webp","./img/ck3_5/6.JPG", "./img/ck3_5/3.jpg", "./img/ck03/2.jpg", "./img/ck03/1.jpg",
+    "./img/ck05/5.jpg", "./img/pioneer01/4.jpg", "./img/pioneer01/6.jpg", "./img/ck02/1.jpg", "./img/ck02/5.JPG"
+    ];
+
+    let index = 0;
+
+    const photo = document.getElementById("photo");
+    const leftBtn = document.querySelector(".left");
+    const rightBtn = document.querySelector(".right");
+
+    rightBtn.addEventListener("click", () => {
+        index++;
+        if (index >= images.length) {
+            index = 0; 
+        }
+        photo.src = images[index];
+    });
+
+    leftBtn.addEventListener("click", () => {
+        index--;
+        if (index < 0) {
+            index = images.length - 1; 
+        }
+        photo.src = images[index];
+    });
+    </script>-->
+    
     </div>
     <div class="t_box">
         <div class="car_imgbox">
