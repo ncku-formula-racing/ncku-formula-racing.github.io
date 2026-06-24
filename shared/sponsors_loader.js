@@ -11,8 +11,14 @@ async function renderSponsors() {
             const response = await fetch(jsonPath);
             const sponsorsData = await response.json();
 
+
             const html = sponsorsData.map(s => {
-                const imgTag = `<img src="/img/sponsors/${s.img}" loading="lazy">`;
+                // 檢查是否有 class，有的話就加上，沒有就留空
+                const className = s.class ? `class="${s.class}"` : '';
+                
+                // 把 className 塞進 img 標籤中
+                const imgTag = `<img src="/img/sponsors/${s.img}" ${className} loading="lazy">`;
+                
                 return s.link 
                     ? `<a href="${s.link}" target="_blank">${imgTag}</a>` 
                     : imgTag;
