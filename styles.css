@@ -1083,6 +1083,20 @@ hr {
     flex-wrap: wrap;*/
 }
 
+/* 預設所有贊助商 Logo 樣式 */
+.sponsors-inject img, 
+.sponsors-inject a img {
+    padding: 20px;
+    height: 75px;
+    vertical-align: middle; /* 讓不同高度的 logo 置中對齊，畫面比較好看 */
+}
+
+/* 針對有設定 enlarge 的圖片放大 */
+.sponsors-inject img.enlarge, 
+.sponsors-inject a img.enlarge {
+    height: 90px;
+}
+
 .sponsors>img {
     padding: 20px;
     height: 75px;
