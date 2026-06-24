@@ -1,4 +1,3 @@
-// ./shared/sponsors_2025.json
 [
   { "link": "https://www.diodes.com/tw/",       "img": "diodes.webp" },
   { "link": "https://alumni.me.ncku.edu.tw/",   "img": "nckume_alumni.webp", "class": "enlarge" },

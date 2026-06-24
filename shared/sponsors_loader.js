@@ -11,6 +11,12 @@ async function renderSponsors() {
             const response = await fetch(jsonPath);
             const sponsorsData = await response.json();
 
+            const html = sponsorsData.map(s => {
+                const imgTag = `<img src="/img/sponsors/${s.img}" loading="lazy">`;
+                return s.link 
+                    ? `<a href="${s.link}" target="_blank">${imgTag}</a>` 
+                    : imgTag;
+            }).join('');
 
             const html = sponsorsData.map(s => {
                 // 檢查是否有 class，有的話就加上，沒有就留空
