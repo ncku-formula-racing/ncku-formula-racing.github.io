@@ -46,12 +46,12 @@
         <div class="sector">
             <h2>第九屆成員</h2>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/leader2.JPG" onclick="easter1('s')" id="s">
                 <h3>隊長</h3>
                 <h2>桑維祥</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/Vicecaptain1.JPG" onclick="easter1('h')" id="h">
                 <h3>副隊長</h3>
                 <h2>賴政諺</h2>
             </div>
@@ -61,28 +61,28 @@
                 <h2>余泰佑</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/ce1.JPG" onclick="easter1('z')" id="z">
                 <h3>總工程師</h3>
                 <h2>張晴睿</h2>
             </div>
             <hr>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/bd1.JPG">
                 <h3>車體組 組長</h3>
                 <h2>蘇楷程</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/bd2.JPG">
                 <h3>車體組 組長</h3>
                 <h2>沈思涵</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/cd1.JPG">
                 <h3>底盤組 組長</h3>
                 <h2>葉治均</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/cd2_1.JPG" onclick="easter1('l')" id="l">
                 <h3>底盤組 組長</h3>
                 <h2>呂銘倫</h2>
             </div>
@@ -93,22 +93,22 @@
             </div>
             <hr>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/cd1_1.jpg" onclick="easter1('lin')" id="lin">
                 <h3>電力組 組長</h3>
                 <h2>林伯勳</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/cd2.JPG" onclick="easter1('z')" id="z">
                 <h3>電力組 組長</h3>
                 <h2>賴志賢</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/Commercial.JPG">
                 <h3>商業組 組長</h3>
                 <h2>柯昱亘</h2>
             </div>
             <div class="member">
-                <img src="./img/members/shark.png">
+                <img src="./img/members/2026/AdministrativeTeamLeader1.JPG">
                 <h3>行政組 組長</h3>
                 <h2>洪愷謙</h2>
             </div>
@@ -369,69 +369,56 @@
     var c1, c3 = 0;
 
     function easter1(i) {
-        if (i === "ctw") {
-            if (ctw === 0) {
-                document.getElementById("ctw").src = "./img/members/2024/ce-1.png";
-                ctw = 1;
-            } else {
-                document.getElementById("ctw").src = "./img/members/2024/ce.png";
-                ctw = 0;
+        if (i === "s") {
+            if (s === 0) {
+                document.getElementById("s").src = "./img/members/2026/leader3.jpg";
+                s = 1;
+            } else if (s === 1) {
+                document.getElementById("s").src = "./img/members/2026/leader2.jpg";
+                s = 2;
+            } else  {
+                document.getElementById("s").src = "./img/members/2026/leader1.jpg";
+                s = 0;
             }
-        } else if (i === "lyp") {
-            if (lyp === 0) {
-                document.getElementById("lyp").src = "./img/members/2025/viceleader-1.png";
-                lyp = 1;
+        } else if (i === "h") {
+            if (h === 0) {
+                document.getElementById("h").src = "./img/members/2026/vicecaptain1.JPG";
+                h = 1;
             } else {
-                document.getElementById("lyp").src = "./img/members/2025/viceleader.png";
-                lyp = 0;
+                document.getElementById("h").src = "./img/members/2026/vicecaptain2.JPG";
+                h = 0;
             }
-        } else if (i === "b1") {
-            if (b1 === 0) {
-                document.getElementById("b1").src = "./img/members/2025/bd1-1.png";
-                b1 = 1;
+        } else if (i === "z") {
+            if (z === 0) {
+                document.getElementById("z").src = "./img/members/2026/ce1.JPG";
+                z = 1;
             } else {
-                document.getElementById("b1").src = "./img/members/2025/bd1.png";
-                b1 = 0;
+                document.getElementById("z").src = "./img/members/2026/ce2.JPG";
+                z = 0;
             }
-        } else if (i === "b2") {
-            if (b2 === 0) {
-                document.getElementById("b2").src = "./img/members/2025/bd2-1.png";
-                b2 = 1;
+        } else if (i === "l") {
+            if (l === 0) {
+                document.getElementById("l").src = "./img/members/2026/cd2_1.JPG";
+                l = 1;
             } else {
-                document.getElementById("b2").src = "./img/members/2025/bd2.png";
-                b2 = 0;
+                document.getElementById("l").src = "./img/members/2026/cd2_2.JPG";
+                l = 0;
             }
-        } else if (i === "c1") {
-            if (c1 === 0) {
-                document.getElementById("c1").src = "./img/members/2025/cd1-1.png";
-                c1 = 1;
+        } else if (i === "lin") {
+            if (lin === 0) {
+                document.getElementById("lin").src = "./img/members/2026/cd1_1.jpg";
+                lin = 1;
             } else {
-                document.getElementById("c1").src = "./img/members/2025/cd1.png";
-                c1 = 0;
+                document.getElementById("lin").src = "./img/members/2026/cd1_2.jpg";
+                lin = 0;
             }
-        } else if (i === "c3") {
-            if (c3 === 0) {
-                document.getElementById("c3").src = "./img/members/2025/cd3-1.png";
-                c3 = 1;
+        } else if (i === "home") {
+            if (home === 0) {
+                document.getElementById("home").src = "./img/members/2026/AdminstrativeTeamLeader1.jpg";
+                home = 1;
             } else {
-                document.getElementById("c3").src = "./img/members/2025/cd3.png";
-                c3 = 0;
-            }
-        }else if (i === "e1") {
-            if (e1 === 0) {
-                document.getElementById("e1").src = "./img/members/2025/ed1-2.png";
-                e1 = 1;
-            } else {
-                document.getElementById("e1").src = "./img/members/2025/ed1-1.png";
-                e1 = 0;
-            }
-        } else if (i === "e2") {
-            if (e2 === 0) {
-                document.getElementById("e2").src = "./img/members/2025/ed2-2.png";
-                e2 = 1;
-            } else {
-                document.getElementById("e2").src = "./img/members/2025/ed2-1.png";
-                e2 = 0;
+                document.getElementById("home").src = "./img/members/2026/AdminstrativeTeamLeader2.jpg";
+                home = 0;
             }
         }
     }
