@@ -1014,9 +1014,9 @@ hr {
 }
 
 .car_row {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
     padding: 0 5px;
 }
 
